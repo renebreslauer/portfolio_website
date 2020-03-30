@@ -155,14 +155,7 @@ h1 {
 
 /* side nav */
 
-.side_nav_wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 80px;
-  background-color: black;
-}
+
 
 /* nav */
 .nav_wrapper {
@@ -172,7 +165,7 @@ h1 {
   width: 100%;
   background-color: black;
   height: 80px;
-  position: fixed;
+  position: absolute;
   animation: 2s ease-out 0s 1 slideInFromTop;
 }
 .nav_container {
@@ -433,4 +426,11 @@ h1 {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.contact_container {
+display: flex;
+justify-content: center;
+align-content: center;
+padding-top: 100px;
 }

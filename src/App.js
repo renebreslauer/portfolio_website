@@ -4,7 +4,7 @@ import './App.css'
 import Navbar from '../src/components/Navbar'
 import Home from '../src/components/Home'
 import About from '../src/components/About'
-import Contact from '../src/components/Contact'
+import Contact from './components/Contact'
 import Skills from '../src/components/Skills'
 import Portfolio from '../src/components/Portfolio'
 

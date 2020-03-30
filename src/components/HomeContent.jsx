@@ -1,27 +1,32 @@
 import React from 'react'
 import '../App.css'
 import Final_R from '../components/assets/final_r.svg'
+import { Link } from 'react-router-dom'
 
 function HomeContent() {
   return (
-    <div class="main_container">
-      <div class="h1_container">
-        <h1 class="top">Rene</h1>
-        <h1 class="bottom">Breslauer</h1>
-        <h2 class="subtitle">[ Developer + Designer ]</h2>
-        <div class="buttons">
-          <button class="blob-btn">
-            Let's Talk
-            <span class="blob-btn__inner">
-              <span class="blob-btn__blobs">
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
-              </span>
-            </span>
-          </button>
-          <br />
+    <>
+      <div class="main_container">
+        <div class="h1_container">
+          <h1 class="top">Rene</h1>
+          <h1 class="bottom">Breslauer</h1>
+          <h2 class="subtitle">[ Developer + Designer ]</h2>
+          <Link to="/Contact">
+            <div class="buttons">
+              <button class="blob-btn">
+                Let's Talk
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </Link>
+
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
             <defs>
               <filter id="goo">
@@ -42,6 +47,7 @@ function HomeContent() {
           </svg>
         </div>
       </div>
+
       <div class="svg_animation">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -60,10 +66,9 @@ function HomeContent() {
       M206.5,427.5l97.2-0.2l31-20 M124.8,293.7l82.1,133.6l31-20 M14.5,427.5H93 M124.8,406.9l-32.3,20.6"
           />
         </svg>
-        <img src={ Final_R } className="final_r" />
+        <img src={Final_R} className="final_r" />
       </div>
-    </div>
-    
+    </>
   )
 }
 

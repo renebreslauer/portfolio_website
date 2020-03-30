@@ -1,14 +1,13 @@
 import React from 'react'
-import Navbar from './Navbar'
+
 import '../App.css'
 
-function About () {
+function About() {
   return (
     <>
-      <Navbar />
-    <div className="About_content">
-        <h1>About Me</h1>
-    </div>
+      <div className="About_content">
+        <h2>About Me</h2>
+      </div>
     </>
   )
 }

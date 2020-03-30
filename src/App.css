@@ -371,6 +371,7 @@ h1 {
   text-align: center;
   font-size: 7px;
   transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .nav_div:hover a {

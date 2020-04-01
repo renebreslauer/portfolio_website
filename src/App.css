@@ -449,6 +449,7 @@ h1 {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-right: 4ch;
 }
 
 #contact_form {

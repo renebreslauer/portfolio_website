@@ -6,12 +6,12 @@ function Contact() {
   return (
     <>
       <div className="contact_wrapper">
-        <Form />
         <div className="header_field">
           <div className="typewriter">
             <h2>Let's Chat</h2>
           </div>
         </div>
+        <Form />
       </div>
     </>
   )

@@ -203,19 +203,6 @@ h1 {
   background-color: #0f4c81;
 } */
 
-.nav_icon {
-  max-width: 60px;
-  opacity: 100%;
-  transform: scale(0.5);
-  transition: all 0.5s ease-in-out;
-}
-
-.nav_div:hover .nav_icon {
-  opacity: 30%;
-  cursor: pointer;
-  transform: scale(1);
-}
-
 /* blob button */
 
 *,
@@ -353,7 +340,21 @@ h1 {
   }
 }
 
-.nav_link {
+.nav_icon {
+  max-width: 60px;
+  width: 20px;
+  opacity: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav_div:hover .nav_icon {
+  opacity: 30%;
+  cursor: pointer;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.link_text {
   font-family: 'Rajdhani', sans-serif;
   color: #4be3ac;
   text-decoration: none;
@@ -362,15 +363,21 @@ h1 {
   text-align: center;
   font-size: 7px;
   transition: all 0.3s ease-in-out;
-  z-index: 2;
 }
 
-.nav_div:hover a {
+.nav_link--active p {
   visibility: visible;
   transform: scale(2);
 }
 
-.nav_link a:active {
+.nav_link--active .nav_icon {
+  max-width: 60px;
+  opacity: 100%;
+  transform: scale(0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.nav_div:hover .link_text {
   visibility: visible;
   transform: scale(2);
 }
@@ -433,19 +440,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-direction: row;
-  padding-top: 300px;
-}
-
-.contact_container {
+  flex-direction: column;
+  padding-top: 25ch;
+  width: 100%;
 }
 
 .header_field {
   display: flex;
   justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin-left: 5%;
+  text-align: center;
 }
 
 #contact_form {
@@ -453,13 +456,15 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-right: 50px;
+  margin-top: 2%;
 }
 
 input {
   border-radius: 50px;
   border: none;
   padding: 20px;
-  width: 50ch;
+  width: 55ch;
   background-color: #384d56;
   color: white;
   margin: 10px;
@@ -485,7 +490,7 @@ textarea {
   color: white;
   margin: 10px;
   font-size: 18px;
-  width: 50ch;
+  width: 55ch;
   animation: 0.5s ease-out 0s 1 slideInFromTop;
 }
 
@@ -498,17 +503,20 @@ textarea:focus {
   color: grey;
   font-size: 18px;
 }
-
+.typewriter {
+  width: fit-content;
+  text-align: center;
+}
 .typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #94fc13; /* The typwriter cursor */
+  border-right: 0.15em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  color: white;
-  font-size: 70px;
   font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-size: 90px;
 }
 
 /* The typing effect */

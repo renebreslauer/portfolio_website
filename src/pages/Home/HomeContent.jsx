@@ -1,6 +1,6 @@
 import React from 'react'
-import '../App.css'
-import Final_R from '../components/assets/final_r.svg'
+import '../../App.css'
+import Final_R from '../../components/assets/final_r.svg'
 import { Link } from 'react-router-dom'
 
 function HomeContent() {

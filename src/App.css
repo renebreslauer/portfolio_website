@@ -461,7 +461,23 @@ h1 {
   margin-top: 2%;
 }
 
-input {
+.name-control {
+  border-radius: 50px;
+  border: none;
+  padding: 20px;
+  width: 55ch;
+  background-color: #384d56;
+  color: white;
+  margin: 10px;
+  font-size: 18px;
+  animation: 0.6s ease-out 0s 1 slideInFromTop;
+}
+.name-control:focus {
+  outline: none;
+  border-bottom: 3px solid #94fc13;
+}
+
+.message-control {
   border-radius: 50px;
   border: none;
   padding: 20px;
@@ -472,10 +488,11 @@ input {
   font-size: 18px;
   animation: 1s ease-out 0s 1 slideInFromTop;
 }
-input:focus {
+.message-control:focus {
   outline: none;
   border-bottom: 3px solid #94fc13;
 }
+
 
 .input_group {
   display: flex;
@@ -492,7 +509,7 @@ textarea {
   margin: 10px;
   font-size: 18px;
   width: 55ch;
-  animation: 0.5s ease-out 0s 1 slideInFromTop;
+  animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
 textarea:focus {
@@ -539,4 +556,15 @@ textarea:focus {
   50% {
     border-color: #94fc13;
   }
+}
+
+.footer {
+  bottom: auto 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  height: 5rem;
+  z-index: 2;
+  color: white;
+  flex-shrink: 0;
 }

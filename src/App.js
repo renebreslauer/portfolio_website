@@ -1,15 +1,12 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
-import Navbar from '../src/components/Navbar'
-import Home from '../src/components/Home'
-import About from '../src/components/About'
-import Contact from './components/Contact'
-import Skills from '../src/components/Skills'
-import Portfolio from '../src/components/Portfolio'
+import { Navbar, Footer } from '../src/components/index.js'
+import { Home, About, Contact, Skills, Portfolio } from './pages/index.js'
 
 function App() {
   return (
+    <>
     <Router>
       <Navbar />
       <Switch>
@@ -30,6 +27,8 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    <Footer />
+    </>
   )
 }
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css'
-import { Link } from 'react-router-dom'
 import HomeIcon from '../components/assets/Home_icon.svg'
 import AboutIcon from '../components/assets/About_icon.svg'
 import SkillsIcon from '../components/assets/Skills_icon.svg'

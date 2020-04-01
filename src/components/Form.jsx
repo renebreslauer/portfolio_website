@@ -1,6 +1,8 @@
 import React from 'react'
 import '../App.css'
 
+
+
 class Form extends React.Component {
   constructor(props) {
     super(props)
@@ -23,7 +25,7 @@ class Form extends React.Component {
             <input
               type="text"
               placeholder="Name"
-              className="form-control"
+              className="name-control"
               autoComplete="off"
             />
           </div>
@@ -32,7 +34,7 @@ class Form extends React.Component {
           <input
             type="email"
             placeholder="Email"
-            className="form-control"
+            className="message-control"
             aria-describedby="emailHelp"
             autoComplete="off"
           />
@@ -94,3 +96,4 @@ class Form extends React.Component {
 }
 
 export default Form
+

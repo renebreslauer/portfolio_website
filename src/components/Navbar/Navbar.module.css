@@ -31,6 +31,7 @@
 
 .logo_icon:hover {
   margin-top: 2rem;
+  margin-left: 2rem;
   transform: rotate(-9deg) scale(2);
   transition: all 0.5s ease-in-out;
 }

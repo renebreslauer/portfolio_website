@@ -1,30 +1,3 @@
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes rotateIn {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(9deg);
-  }
-}
-
 .nav_wrapper {
   display: flex;
   flex-direction: row;
@@ -32,8 +5,7 @@
   width: 100%;
   background-color: black;
   height: 80px;
-
-  animation: 2s ease-out 0s 1 slideInFromTop;
+  animation: slideInFromTop 2s ease-in-out 0s 1;
 }
 
 .nav_body {
@@ -53,12 +25,13 @@
 
 .logo_icon {
   width: 3rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .logo_icon:hover {
-  transform: rotate(-9deg) scale(1.7);
+  margin-top: 2rem;
+  transform: rotate(-9deg) scale(2);
   transition: all 0.5s ease-in-out;
-  margin-top: 1rem;
 }
 
 .nav_div {
@@ -111,4 +84,49 @@
 .nav_div:hover .link_text {
   visibility: visible;
   transform: scale(2);
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(9deg);
+  }
+}
+
+@keyframes rotateLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-9deg);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.7);
+  }
 }

@@ -16,7 +16,7 @@
   color: white;
   margin: 10px;
   font-size: 18px;
-  animation: 0.6s ease-out 0s 1 slideInFromTop;
+  animation: slideInFromTop 0.6s ease-out 0s 1;
 }
 .name_control:focus {
   outline: none;
@@ -32,7 +32,7 @@
   color: white;
   margin: 10px;
   font-size: 18px;
-  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation: slideInFromTop 1s ease-out 0s 1;
 }
 .message_control:focus {
   outline: none;
@@ -54,7 +54,7 @@ textarea {
   margin: 10px;
   font-size: 18px;
   width: 55ch;
-  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation: slideInFromTop 1s ease-out 0s 1;
 }
 
 textarea:focus {

@@ -1,7 +1,5 @@
 import React from 'react'
-import '../App.css'
-
-
+import styles from './Form.module.css'
 
 class Form extends React.Component {
   constructor(props) {
@@ -16,46 +14,46 @@ class Form extends React.Component {
   render() {
     return (
       <form
-        id="contact_form"
+        id={styles.contact_form}
         onSubmit={this.handleSubmit.bind(this)}
         method="POST"
       >
-        <div className="input_group">
-          <div className="form-group">
+        <div className={styles.input_group}>
+          <div className={styles.form_group}>
             <input
               type="text"
               placeholder="Name"
-              className="name-control"
+              className={styles.name_control}
               autoComplete="off"
             />
           </div>
         </div>
-        <div className="form-group">
+        <div className={styles.form_group}>
           <input
             type="email"
             placeholder="Email"
-            className="message-control"
+            className={styles.message_control}
             aria-describedby="emailHelp"
             autoComplete="off"
           />
         </div>
 
-        <div className="form-group">
+        <div className={styles.form_group}>
           <textarea
-            ClassName="form-control"
+            ClassName={styles.form_control}
             placeholder="Message"
             rows="5"
           ></textarea>
         </div>
-        <div class="buttons">
-          <button type="submit" class="blob-btn">
+        <div className={styles.buttons}>
+          <button type="submit" class={styles.blob_btn}>
             Submit{' '}
-            <span class="blob-btn__inner">
-              <span class="blob-btn__blobs">
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
+            <span className={styles.blob_btn__inner}>
+              <span className={styles.blob_btn__blobs}>
+                <span className={styles.blob_btn__blob}></span>
+                <span className={styles.blob_btn__blob}></span>
+                <span className={styles.blob_btn__blob}></span>
+                <span className={styles.blob_btn__blob}></span>
               </span>
             </span>
           </button>
@@ -96,4 +94,3 @@ class Form extends React.Component {
 }
 
 export default Form
-

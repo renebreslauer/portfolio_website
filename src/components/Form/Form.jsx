@@ -21,6 +21,7 @@ class Form extends React.Component {
         <div className={styles.input_group}>
           <div className={styles.form_group}>
             <input
+            id="name"
               type="text"
               placeholder="Name"
               className={styles.name_control}
@@ -30,6 +31,7 @@ class Form extends React.Component {
         </div>
         <div className={styles.form_group}>
           <input
+          id="email"
             type="email"
             placeholder="Email"
             className={styles.message_control}
@@ -40,6 +42,7 @@ class Form extends React.Component {
 
         <div className={styles.form_group}>
           <textarea
+          id="message"
             className={styles.form_control}
             placeholder="Message"
             rows="5"

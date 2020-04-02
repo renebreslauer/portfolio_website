@@ -87,6 +87,20 @@
   transform: scale(2);
 }
 
+#about_link {
+  padding-left: 0.3ch;
+  padding-top: 0.1ch;
+}
+
+#skills_link {
+  padding-left: 0.5ch;
+  padding-top: 0.7ch;
+}
+
+#portfolio_link {
+  padding-right: 1ch;
+ padding-top: 1.5ch;
+}
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-100%);

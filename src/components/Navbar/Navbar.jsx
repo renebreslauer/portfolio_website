@@ -23,7 +23,7 @@ function MyNavbar() {
           id={styles.about_link}
           activeClassName={styles.nav_link_active}
         >
-          <p className={styles.link_text}>About</p>
+          <p className={styles.link_text} id={styles.about_link}>About</p>
           <img src={AboutIcon} className={styles.nav_icon} alt="About icon" />
         </NavLink>
       </div>
@@ -31,10 +31,10 @@ function MyNavbar() {
         <NavLink
           to="/Skills"
           className={styles.nav_link}
-          id={styles.skills_link}
+      
           activeClassName={styles.nav_link_active}
         >
-          <p className={styles.link_text}>Skills</p>
+          <p className={styles.link_text} id={styles.skills_link}>Skills</p>
           <img src={SkillsIcon} className={styles.nav_icon} alt="Skills icon" />
         </NavLink>
       </div>
@@ -42,10 +42,10 @@ function MyNavbar() {
         <NavLink
           to="/Portfolio"
           className={styles.nav_link}
-          id={styles.portfolio_link}
+         
           activeClassName={styles.nav_link_active}
         >
-          <p className={styles.link_text}>Portfolio</p>
+          <p className={styles.link_text} id={styles.portfolio_link}>Portfolio</p>
           <img
             src={PortfolioIcon}
             className={styles.nav_icon}
@@ -61,7 +61,7 @@ function MyNavbar() {
           id={styles.contact_link}
           activeClassName={styles.nav_link_active}
         >
-          <p className={styles.link_text}>Contact</p>
+          <p className={styles.link_text} id styles={styles.contact_link}>Contact</p>
           <img
             src={ContactIcon}
             className={styles.nav_icon}

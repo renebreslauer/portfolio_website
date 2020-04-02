@@ -11,7 +11,7 @@ function MyNavbar() {
   return (
     <div className={styles.nav_wrapper}>
       <div className={styles.nav_logo}>
-        <NavLink to="/" id={styles.home_link} label="home" to="/">
+        <NavLink to="/" label="home" to="/">
           <img src={Final_R} className={styles.logo_icon} alt="R logo" />
         </NavLink>
       </div>

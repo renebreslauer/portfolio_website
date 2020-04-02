@@ -40,13 +40,13 @@ class Form extends React.Component {
 
         <div className={styles.form_group}>
           <textarea
-            ClassName={styles.form_control}
+            className={styles.form_control}
             placeholder="Message"
             rows="5"
           ></textarea>
         </div>
         <div className={styles.buttons}>
-          <button type="submit" class={styles.blob_btn}>
+          <button type="submit" className={styles.blob_btn}>
             Submit{' '}
             <span className={styles.blob_btn__inner}>
               <span className={styles.blob_btn__blobs}>

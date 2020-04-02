@@ -1,0 +1,79 @@
+.about_wrapper {
+  padding-top: 25ch;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.about_content {
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.hidden_images {
+  flex-direction: center;
+  align-content: center;
+}
+
+.about_body {
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  padding-top: 3%;
+}
+
+.typewriter {
+  width: fit-content;
+  text-align: center;
+}
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+.special_text {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden_image {
+  background-color: white;
+  width: 5ch;
+  height: 5ch;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+#rabbit_text:hover:after #rabbit_image {
+  opacity: 100;
+  background-color: white;
+  width: 3ch;
+  height: 3ch;
+  border-radius: 50px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #94fc13;
+  }
+}

@@ -5,6 +5,7 @@
   width: 100%;
   background-color: black;
   height: 80px;
+  position: fixed;
   animation: slideInFromTop 2s ease-in-out 0s 1;
 }
 

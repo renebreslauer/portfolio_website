@@ -12,10 +12,7 @@
         {"src": "^/service-worker.js", "headers": {"cache-control": "s-maxage=0"}, "dest": "/service-worker.js"},
         {"src": "^/precache-manifest.(.*)", "dest": "/precache-manifest.$1"},
         {"src": "^/(.*)", "dest": "/index.html"}
-    ]
-}
-
-{
+    ],
     "version": 2,
     "name": "nodejs-express",
     "builds": [

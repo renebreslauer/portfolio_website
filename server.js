@@ -1,56 +1,60 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+const cors = require('cors');
+
+const app = express();
+
+const port = 4444;
+
+
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-const nodemailer = require('nodemailer')
-const express = require('express');
-const bodyParser = require('body-parser')
-const path = require('path');
-const app = express();
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(cors());
 
-app.use(express.static(path.join(__dirname, 'build')));
-
-app.get('/ping', function (req, res) {
- return res.send('pong');
+app.listen(port, () => {
+  console.log('We are live on port 4444');
 });
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get('/', (req, res) => {
+  res.send('Welcome to my api');
+})
+
+app.post('/api/v1', (req,res) => {
+  let data = req.body;
+
+let smtpTransport = nodemailer.createTransport({
+  service: 'Gmail',
+  port: 465,
+  auth: {
+    user: `${process.env.GMAIL_USER}`,
+    pass: `${process.env.GMAIL_PASS}`
+  }
 });
 
-app.listen(process.env.PORT || 8080);
+let mailOptions = {
+  from: data.email,
+  to: `${process.env.GMAIL_USER}`,
+  subject: 'Portfolio Inquiry',
+  html: `<p>${data.name}</p>
+          <p>${data.email}</p>
+          <p>${data.message}</p>`
+};
 
-// POST route from contact form
-app.post('/contact', (req, res) => {
+smtpTransport.sendMail(mailOptions,
+(error, response) => {
+  if(error) {
+    res.send(error)
+  }else {
+    res.send('Success')
+  }
+  smtpTransport.close();
+});
 
-    // Instantiate the SMTP server
+})
 
-    const smtpTrans = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
-      secure: true,
-      auth: {
-        user: `${process.env.GMAIL_USER}`,
-        pass: `${process.env.GMAIL_PASS}`
-      }
-    })
-  
-    // Specify what the email will look like
-    const mailOpts = {
-      from: 'Your sender info here', // This is ignored by Gmail
-      to: `${process.env.GMAIL_USER}`,
-      subject: 'New message from contact form at Portfolio Site',
-      text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-    }
-  
-    // Attempt to send the email
-    smtpTrans.sendMail(mailOpts, (error, response) => {
-      if (error) {
-        res.json('contact-failure') // Show a page indicating failure
-      }
-      else {
-        res.json('contact-success') // Show a page indicating success
-      }
-    })
-  })
+

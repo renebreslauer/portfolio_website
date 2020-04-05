@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
-import { Navbar } from '../src/components/index.js'
+import { Navbar, Footer } from '../src/components/index.js'
 import { Home, About, Contact, Skills, Portfolio } from './pages/index.js'
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </>
   )

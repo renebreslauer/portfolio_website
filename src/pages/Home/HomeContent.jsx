@@ -45,7 +45,9 @@ function HomeContent() {
               </filter>
             </defs>
           </svg>
+ 
         </div>
+   
       </div>
 
       <div className={styles.svg_animation}>
@@ -68,6 +70,7 @@ function HomeContent() {
         </svg>
         <img src={Final_R} className={styles.final_r} alt="Letter R logo" />
       </div>
+      
     </>
   )
 }

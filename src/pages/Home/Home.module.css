@@ -275,12 +275,7 @@ h1 {
   height: 100%;
   width: 100%;
 }
-.social_wrapper {
-  background-color: black;
-  width: 300px;
-  height: 100px;
-  
-}
+
 @supports ((-webkit-filter: url('#goo')) or (filter: url('#goo'))) {
   .blob_btn:hover .blob_btn__blob {
     -webkit-transform: translateZ(0) scale(1.4);

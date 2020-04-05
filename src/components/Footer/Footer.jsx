@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom'
 function Footer() {
     return (
     <footer>
+    <div className={styles.footer_wrapper}>
         <h2>footer</h2>
+    </div>
     </footer>
     )
   }

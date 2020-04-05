@@ -5,3 +5,12 @@ footer {
   height: 10ch;
   width: 100%;
 }
+
+.footer_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+footer h2 {
+    color: white;
+}

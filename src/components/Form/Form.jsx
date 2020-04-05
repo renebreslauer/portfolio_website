@@ -25,7 +25,7 @@ class Form extends Component {
           message: this.state.message
       }
       
-      axios.post('portfolio-website-dk8tqrx10.now.sh/api/v1', data)
+      axios.post('http://localhost:4444/api/v1', data)
       .then( res => {
           this.setState({ sent: true }, this.resetForm())
       })

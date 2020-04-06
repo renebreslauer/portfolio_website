@@ -15,6 +15,17 @@ footer {
     margin-right: 5%;
 }
 
+.links_container a {
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+
+}
+
+.links_container a:hover {
+    color: grey;
+}
+
 .links_container p {
     color: white;
     padding: 3ch;
@@ -39,4 +50,8 @@ footer {
     padding: 3ch;
     font-family: 'Rajdhani', sans-serif;
 
+}
+
+.footer_icon {
+    margin-right: 1ch;
 }

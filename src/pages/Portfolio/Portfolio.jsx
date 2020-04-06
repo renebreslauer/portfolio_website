@@ -36,8 +36,8 @@ const PortfolioProjects = () => {
             ></animated.div>
           </div>
           <div className={styles.project_footer}>
-            <p>Live Site</p>
-            <p>Source Code</p>
+            <a href="#">Live Site</a>
+            <a href="#">Source Code</a>
           </div>
         </div>
         <div className={styles.project_two_wrapper}>
@@ -53,8 +53,8 @@ const PortfolioProjects = () => {
             ></animated.div>
           </div>
           <div className={styles.project_footer}>
-            <p>Live Site</p>
-            <p>Source Code</p>
+            <a href="#">Live Site</a>
+            <a href="#">Source Code</a>
           </div>
         </div>
       </div>

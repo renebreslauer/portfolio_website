@@ -7,14 +7,14 @@
 }
 
 .project_one_wrapper {
-  height: 35rem;
+  height: 40rem;
   width: 60ch;
   margin-right: 5%;
   border-radius: 20px;
 }
 
 .project_two_wrapper {
-  height: 35rem;
+  height: 40rem;
   width: 60ch;
   margin-left: 5%;
   border-radius: 20px;
@@ -25,7 +25,7 @@
   height: 10%;
   padding: 3ch;
   padding-bottom: 5ch;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 1.3rem;
   color: white;
 }
@@ -40,13 +40,16 @@
   flex-direction: row;
   bottom: 0ch;
   color: white;
+  margin-top: -6ch;
 }
 
-.project_footer p {
+.project_footer a {
   font-size: 1rem;
   padding: 2ch;
   font-family: 'Rajdhani', sans-serif;
   margin-left: 5%;
+  color: white;
+  text-decoration: none;
 }
 
 .project1 {
@@ -61,7 +64,7 @@
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
-  border: 15px solid white;
+  border: 0x solid white;
 }
 
 .project1:hover {
@@ -79,7 +82,7 @@
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
-  border: 15px solid white;
+  border: 0px solid white;
 }
 
 .project2:hover {

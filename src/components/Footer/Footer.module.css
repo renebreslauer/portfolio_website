@@ -55,3 +55,12 @@ footer {
 .footer_icon {
     margin-right: 1ch;
 }
+
+.email {
+    color: white;
+    text-decoration: none;
+}
+
+.email:hover {
+    color: grey;
+}

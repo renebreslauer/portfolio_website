@@ -3,6 +3,7 @@ import styles from './Home.module.css'
 import Final_R from '../../components/assets/final_r.svg'
 import { Link } from 'react-router-dom'
 
+
 function HomeContent() {
   return (
     <>
@@ -14,7 +15,7 @@ function HomeContent() {
           <Link to="/Contact">
             <div className={styles.buttons}>
               <button className={styles.blob_btn}>
-                Let's Talk
+              Let's Chat
                 <span className={styles.blob_btn__inner}>
                   <span className={styles.blob_btn__blobs}>
                     <span className={styles.blob_btn__blob}></span>

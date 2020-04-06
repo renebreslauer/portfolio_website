@@ -11,7 +11,7 @@ function Footer() {
     <footer>
     <div className={styles.footer_wrapper}>
         <div className={styles.footer_info}>
-            <p>For business inquiries, please email renebreslauer@me.com</p>
+            <p>For business inquiries, please email <a href={'mailto:renebreslauer@me.com'} className={styles.email}>renebreslauer@me.com</a></p>
             <p>Built with React - NodeJS - ExpressJS</p>
         </div>
         <div className={styles.links_container}>

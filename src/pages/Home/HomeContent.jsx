@@ -15,7 +15,7 @@ function HomeContent() {
           <Link to="/Contact">
             <div className={styles.buttons}>
               <button className={styles.blob_btn}>
-              Let's Chat
+              Let's Talk
                 <span className={styles.blob_btn__inner}>
                   <span className={styles.blob_btn__blobs}>
                     <span className={styles.blob_btn__blob}></span>

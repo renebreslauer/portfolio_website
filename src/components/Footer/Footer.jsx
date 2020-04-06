@@ -12,7 +12,7 @@ function Footer() {
     <div className={styles.footer_wrapper}>
         <div className={styles.footer_info}>
             <p>For business inquiries, please email renebreslauer@me.com</p>
-            <p>Website built with React - NodeJS - ExpressJS</p>
+            <p>Built with React - NodeJS - ExpressJS</p>
         </div>
         <div className={styles.links_container}>
             <p className={styles.link_title}>Let's connect:</p>

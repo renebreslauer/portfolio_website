@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: row;
   overflow: hidden;
+  animation: fadeIn 2s;
 }
 
 .project_one_wrapper {
@@ -52,6 +53,11 @@
   text-decoration: none;
 }
 
+.project_footer a:hover {
+  color: #94fc13;
+  font-weight: bold;
+}
+
 .project1 {
   width: 60ch;
   height: 45ch;
@@ -87,4 +93,13 @@
 
 .project2:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

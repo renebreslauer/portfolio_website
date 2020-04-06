@@ -36,8 +36,12 @@ const PortfolioProjects = () => {
             ></animated.div>
           </div>
           <div className={styles.project_footer}>
-            <a href="#">Live Site</a>
-            <a href="#">Source Code</a>
+            <a href="https://github.com/renebreslauer/C36_better_together_now_2">
+              Live Site
+            </a>
+            <a href="https://github.com/renebreslauer/C36_better_together_now_2">
+              Source Code
+            </a>
           </div>
         </div>
         <div className={styles.project_two_wrapper}>
@@ -53,8 +57,15 @@ const PortfolioProjects = () => {
             ></animated.div>
           </div>
           <div className={styles.project_footer}>
-            <a href="#">Live Site</a>
-            <a href="#">Source Code</a>
+            <a target="_blank" href="http://fureverapp.herokuapp.com/">
+              Live Site
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/renebreslauer/C36_midterm_carolina_elias_rene_tristan"
+            >
+              Source Code
+            </a>
           </div>
         </div>
       </div>

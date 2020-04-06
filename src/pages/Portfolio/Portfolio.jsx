@@ -36,10 +36,16 @@ const PortfolioProjects = () => {
             ></animated.div>
           </div>
           <div className={styles.project_footer}>
-            <a href="https://github.com/renebreslauer/C36_better_together_now_2">
+            <a
+              target="_blank"
+              href="https://github.com/renebreslauer/C36_better_together_now_2"
+            >
               Live Site
             </a>
-            <a href="https://github.com/renebreslauer/C36_better_together_now_2">
+            <a
+              target="_blank"
+              href="https://github.com/renebreslauer/C36_better_together_now_2"
+            >
               Source Code
             </a>
           </div>

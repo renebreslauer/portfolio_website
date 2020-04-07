@@ -13,8 +13,8 @@ function Skills() {
         </p>
         <br></br>
         <p>
-          My experience includes full-stack applications, as well, using Node
-          JS, Express JS, Ruby on Rails, and PostgreSQL.
+          My experience includes full-stack applications, as well, have worked
+          with Node JS, Express JS, Ruby on Rails, and PostgreSQL.
         </p>
       </div>
       <div className={styles.skills_list}>

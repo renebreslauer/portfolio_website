@@ -8,5 +8,6 @@
 - All SVG animations and navbar icons are my own work, created in Adobe Illustrator
 
 ### I plan on adding the following:
+- Context description to portfolio projects
 - Add work to the gallery, using the Github API
 - Mobile responsiveness

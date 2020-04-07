@@ -43,3 +43,120 @@
   font-size: 9rem;
   margin-top: -2.5rem;
 }
+
+.letter {
+  display: inline-block;
+  transition: ease-in-out 0.2s;
+}
+
+#letter1,
+#letter3,
+#letter5,
+#letter6,
+#letter9,
+#letter13,
+#letter16,
+#letter18,
+#letter22 {
+  display: inline-block;
+  animation: scaleUp 1s, rotateIn1 1s;
+}
+
+#letter2,
+#letter7,
+#letter10,
+#letter12,
+#letter14,
+#letter17,
+#letter21 {
+  display: inline-block;
+  animation: scaleUp 1s, rotateIn2 1s;
+}
+
+#letter4,
+#letter8,
+#letter11,
+#letter15,
+#letter19,
+#letter20 {
+  display: inline-block;
+  animation: scaleUp 1s, rotateIn3 1s;
+}
+
+#letter1:hover,
+#letter3:hover,
+#letter5:hover,
+#letter6:hover,
+#letter9:hover,
+#letter13:hover,
+#letter16:hover,
+#letter18:hover,
+#letter22:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.2) rotate(-3deg);
+  transition: all ease-in-out 0.5s;
+  cursor: default;
+}
+
+#letter2:hover,
+#letter7:hover,
+#letter10:hover,
+#letter12:hover,
+#letter14:hover,
+#letter17:hover,
+#letter21:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.5) rotate(5deg);
+  transition: all ease-in-out 0.5s;
+  cursor: default;
+}
+
+#letter4:hover,
+#letter8:hover,
+#letter11:hover,
+#letter15:hover,
+#letter19:hover,
+#letter20:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.7) rotate(2deg);
+  transition: all ease-in-out 0.5s;
+  cursor: default;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateIn1 {
+  from {
+    transform: rotate(9deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateIn2 {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateIn3 {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

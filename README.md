@@ -1,9 +1,12 @@
-View the site here: https://rene-breslauer.netlify.com/
+# View the site here: https://www.rene-breslauer.com
 
-This portfolio site is a work in progress built with React. I plan on adding the following:
+## This portfolio site is a work in progress built with React, Node JS, and Express JS. It is deployed and hosted with Amazon Web Services.
 
-- Express.js server to add functionality to contact form
-- Content in About, Skills, and Portfolio pages
-- Gallery of work (add Github API)
+### Main Features:
+- Contact form using Node JS and Express JS
+- Styling and animations created using pure-CSS and JSX (with the exception of the Portfolio page, which imports the React-Spring library)
+- All SVG animations and navbar icons are my own work, created in Adobe Illustrator
+
+### I plan on adding the following:
+- Add work to the gallery, using the Github API
 - Mobile responsiveness
-- Center text in navbar icons

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Portfolio.module.css'
 import { useSpring, animated } from 'react-spring'
 
+ 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
   (x - window.innerWidth / 2) / 20,
@@ -19,13 +20,14 @@ const PortfolioProjects = () => {
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 },
   }))
+  
   return (
     <>
       <div className={styles.portfolio_wrapper}>
         <div className={styles.project_one_wrapper}>
           <div className={styles.project_header}>Mission Booked</div>
           <div className={styles.project_body}>
-            <animated.div
+         <animated.div
               className={styles.project1}
               onMouseMove={({ clientX: x, clientY: y }) =>
                 setProject1({ xys: calc(x, y) })

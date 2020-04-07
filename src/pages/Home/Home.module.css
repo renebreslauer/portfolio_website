@@ -21,7 +21,7 @@ h1 {
   color: white;
   animation: fadeIn 2s;
   animation: rotateIn 3s;
-  text-shadow: 5px 5px black;
+  text-shadow: 7px 7px black;
 }
 
 .h1_container {
@@ -276,6 +276,140 @@ h1 {
   height: 100%;
   width: 100%;
 }
+
+.name_letter {
+  display: inline-block;
+  transition: ease-in-out 1s;
+}
+
+
+#name1,
+#name3,
+#name5,
+#name6,
+#name9,
+#name13,
+#name16,
+#name18,
+#name22 {
+  display: inline-block;
+  animation: rotateIn0 2s;
+}
+
+#name2,
+#name7,
+#name10,
+#name12,
+#name14,
+#name17,
+#name21 {
+  display: inline-block;
+  animation: rotateIn2 2s;
+}
+
+#name4,
+#name8,
+#name11,
+#name15,
+#name19,
+#name20 {
+  display: inline-block;
+  animation: rotateIn3 2s;
+}
+
+#name1:hover,
+#name3:hover,
+#name5:hover,
+#name6:hover,
+#name9:hover,
+#name13:hover,
+#name16:hover,
+#name18:hover,
+#name22:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.2) rotate(-3deg);
+  transition: all ease-in-out 0.2s;
+  cursor: default;
+  text-shadow: 7px 7px #4be3ac;
+
+}
+
+#name2:hover,
+#name7:hover,
+#name10:hover,
+#name12:hover,
+#name14:hover,
+#name17:hover,
+#name21:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.5) rotate(5deg);
+  transition: all ease-in-out 0.2s;
+  cursor: default;
+  text-shadow: 7px 7px #4be3ac;
+
+}
+
+#name4:hover,
+#name8:hover,
+#name11:hover,
+#name15:hover,
+#name19:hover,
+#name20:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.7) rotate(2deg);
+  transition: all ease-in-out 0.2s;
+  cursor: default;
+  text-shadow: 5px 5px #4be3ac;
+
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateIn0 {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateIn2 {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateIn3 {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 @supports ((-webkit-filter: url('#goo')) or (filter: url('#goo'))) {
   .blob_btn:hover .blob_btn__blob {

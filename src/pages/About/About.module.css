@@ -18,7 +18,7 @@
   padding-left: 1ch;
 }
 .about_letter {
-  transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 1s;
 }
 #about1 {
   display: inline-block;
@@ -46,7 +46,7 @@
   display: inline-block;
   color: white;
   transform: scale(1.7) rotate(-7deg);
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.2s;
   cursor: default;
 }
 
@@ -56,16 +56,10 @@
   display: inline-block;
   color: white;
   transform: scale(1.5) rotate(7deg);
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.2s;
   cursor: default;
 }
 
-.hidden_images {
-  flex-direction: center;
-  align-content: center;
-  animation: fadeIn 1s ease-in-out;
-  transition: fadeIn 0.2s ease-in-out;
-}
 
 .about_body {
   color: white;
@@ -78,7 +72,6 @@
 .special_text {
   font-size: 20px;
   font-family: 'Rajdhani', sans-serif;
-
   color: white;
   text-decoration: none;
   position: relative;
@@ -88,7 +81,7 @@
 .special_text::after {
   content: '';
   background: #94fc13;
-  opacity: 0.5;
+
   color: black;
   position: absolute;
   left: 8px;
@@ -118,8 +111,12 @@
   height: 20ch;
   border-radius: 50%;
   position: absolute;
-  transition: scale 0.2s ease-in-out;
+  animation: scaleUp 1s;
+  transition: scaleUp ease-in-out 1s;
 }
+
+
+
 
 @keyframes typing {
   from {

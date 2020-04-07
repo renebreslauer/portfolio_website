@@ -23,18 +23,29 @@
 
 .project_header {
   text-align: center;
-  height: 10%;
+  height: 0%;
   padding: 3ch;
   padding-bottom: 5ch;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.3rem;
   color: white;
+  animation: slideInFromTop 1s;
+}
+
+.project_subtitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 5ch;
+  animation: slideInFromTop 1s;
+
 }
 .project_body {
   display: flex;
   justify-content: center;
   height: 70%;
   font-family: 'Rajdhani', sans-serif;
+  animation: scaleUp 1s;
 }
 .project_footer {
   display: flex;
@@ -42,6 +53,7 @@
   bottom: 0ch;
   color: white;
   margin-top: -6ch;
+  animation: slideInFromBottom 2s;
 }
 
 .project_footer a {
@@ -122,5 +134,33 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }

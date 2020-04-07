@@ -15,12 +15,18 @@
   color: #94fc13;
   text-shadow: 7px 7px black;
   font-size: 5rem;
+  padding-left: 1ch;
 }
 .about_letter {
   transition: all ease-in-out 0.2s;
 }
 #about1 {
-  font-size: 7rem;
+  display: inline-block;
+  font-size: 9rem;
+  transform: rotate(12deg);
+  margin-right: -5px;
+  animation: scaleUp 2s, rotateIn3 2s;
+  color: #4be3ac;
 }
 
 #about2,
@@ -29,7 +35,6 @@
   animation: scaleUp 1s, rotateIn1 1s;
 }
 
-#about1,
 #about3,
 #about5 {
   display: inline-block;
@@ -182,10 +187,10 @@
 }
 @keyframes rotateIn3 {
   from {
-    transform: rotate(20deg);
+    transform: rotate(-30deg);
   }
   to {
-    transform: rotate(0deg);
+    transform: rotate(12deg);
   }
 }
 

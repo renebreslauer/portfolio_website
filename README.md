@@ -5,6 +5,7 @@
 ### Main Features:
 - Contact form using Node JS and Express JS
 - Styling and animations created using pure-CSS and JSX (with the exception of the Portfolio page, which imports the React-Spring library)
+- All SVG animations and navbar icons are my own work, created in Adobe Illustrator
 
 ### I plan on adding the following:
 - Gallery of work (add Github API)

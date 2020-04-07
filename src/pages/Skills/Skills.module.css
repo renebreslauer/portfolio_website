@@ -6,8 +6,13 @@
 }
 
 .body_text {
-  padding-top: 30ch;
+  width: 40%;
+  padding-top: 35ch;
   margin-right: 5%;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  animation: fadeIn 2s;
+  font-size: 1.1rem;
 }
 
 .skills_list {
@@ -158,5 +163,14 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

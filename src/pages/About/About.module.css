@@ -3,10 +3,56 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin-left: -5ch;
 }
 .about_content {
   flex-wrap: wrap;
   width: 50%;
+}
+.about_header {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+  color: #94fc13;
+  text-shadow: 7px 7px black;
+  font-size: 5rem;
+}
+.about_letter {
+  transition: all ease-in-out 0.2s;
+}
+#about1 {
+  font-size: 7rem;
+}
+
+#about2,
+#about4 {
+  display: inline-block;
+  animation: scaleUp 1s, rotateIn1 1s;
+}
+
+#about1,
+#about3,
+#about5 {
+  display: inline-block;
+  animation: scaleUp 1s, rotateIn2 1s;
+}
+
+#about2:hover,
+#about4:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.7) rotate(-7deg);
+  transition: all ease-in-out 0.5s;
+  cursor: default;
+}
+
+#about1:hover,
+#about3:hover,
+#about5:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.5) rotate(7deg);
+  transition: all ease-in-out 0.3s;
+  cursor: default;
 }
 
 .hidden_images {
@@ -22,22 +68,6 @@
   font-size: 20px;
   padding-top: 3%;
   animation: fadeIn 2s;
-}
-
-.typewriter {
-  width: fit-content;
-  text-align: center;
-}
-.typewriter h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  font-family: 'Fjalla One', sans-serif;
-  color: white;
-  font-size: 30px;
 }
 
 .special_text {
@@ -79,8 +109,8 @@
 
 .hidden_image {
   background-color: white;
-  width: 10ch;
-  height: 10ch;
+  width: 20ch;
+  height: 20ch;
   border-radius: 50%;
   position: absolute;
   transition: scale 0.2s ease-in-out;
@@ -115,20 +145,55 @@
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes rotateIn {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(9deg);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateIn1 {
+  from {
+    transform: rotate(9deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateIn2 {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateIn3 {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

@@ -21,6 +21,7 @@ h1 {
   color: white;
   animation: fadeIn 2s;
   animation: rotateIn 3s;
+  text-shadow: 5px 5px black;
 }
 
 .h1_container {

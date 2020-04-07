@@ -1,0 +1,45 @@
+.skills_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.body_text {
+  padding-top: 30ch;
+  margin-right: 5%;
+}
+
+.skills_list {
+  padding-top: 15ch;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills_text {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+  color: #94fc13;
+  text-shadow: 7px 7px black;
+}
+
+#html {
+  font-size: 10rem;
+}
+
+#css {
+  font-size: 15rem;
+  margin-top: -4.5rem;
+}
+
+#javascript {
+  font-size: 4.8rem;
+  margin-top: -4rem;
+}
+
+#react {
+  font-size: 9rem;
+  margin-top: -2.5rem;
+}

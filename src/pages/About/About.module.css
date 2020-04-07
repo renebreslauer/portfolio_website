@@ -12,6 +12,8 @@
 .hidden_images {
   flex-direction: center;
   align-content: center;
+  animation: fadeIn 1s ease-in-out;
+  transition: fadeIn 0.2s ease-in-out;
 }
 
 .about_body {
@@ -19,6 +21,7 @@
   font-family: 'Rajdhani', sans-serif;
   font-size: 20px;
   padding-top: 3%;
+  animation: fadeIn 2s;
 }
 
 .typewriter {
@@ -80,6 +83,7 @@
   height: 10ch;
   border-radius: 50%;
   position: absolute;
+  transition: scale 0.2s ease-in-out;
 }
 
 @keyframes typing {
@@ -99,5 +103,32 @@
   }
   50% {
     border-color: #94fc13;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(9deg);
   }
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Portfolio.module.css'
 import { useSpring, animated } from 'react-spring'
-import MissionBooked from '../../components/assets/missionbooked.gif'
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
@@ -36,10 +35,7 @@ const PortfolioProjects = () => {
             ></animated.div>
           </div>
           <div className={styles.project_footer}>
-            <a
-              target="_blank"
-              href="https://github.com/renebreslauer/C36_better_together_now_2"
-            >
+            <a target="_blank" href="https://mission-booked.herokuapp.com/">
               Live Site
             </a>
             <a

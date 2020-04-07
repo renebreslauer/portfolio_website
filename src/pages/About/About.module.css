@@ -38,24 +38,48 @@
 }
 
 .special_text {
-  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+
+  color: white;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.special_text::after {
+  content: '';
+  background: #94fc13;
+  opacity: 0.5;
+  color: black;
+  position: absolute;
+  left: 8px;
+  bottom: -1px;
+  width: calc(100% - 8px);
+  height: calc(100% - 20px);
+  z-index: -1;
+  -webkit-transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+.special_text:hover:after {
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.special_text:hover {
+  color: black;
   cursor: pointer;
 }
 
 .hidden_image {
   background-color: white;
-  width: 5ch;
-  height: 5ch;
+  width: 10ch;
+  height: 10ch;
   border-radius: 50%;
-  opacity: 0;
-}
-
-#rabbit_text:hover:after #rabbit_image {
-  opacity: 100;
-  background-color: white;
-  width: 3ch;
-  height: 3ch;
-  border-radius: 50px;
+  position: absolute;
 }
 
 @keyframes typing {

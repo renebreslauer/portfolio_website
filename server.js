@@ -13,7 +13,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
 app.use(cors());
 
 app.listen(port, () => {
@@ -21,11 +20,13 @@ app.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Welcome to my api');
+  res.json(req.apiGateway.eventM
+    );
 })
 
 app.post('/api/v1', (req,res) => {
   let data = req.body;
+
 
 let smtpTransport = nodemailer.createTransport({
   service: 'Gmail',
@@ -43,7 +44,8 @@ let mailOptions = {
   html: `<p>${data.name}</p>
           <p>${data.email}</p>
           <p>${data.message}</p>`
-};
+}
+
 
 smtpTransport.sendMail(mailOptions,
 (error, response) => {
@@ -56,5 +58,4 @@ smtpTransport.sendMail(mailOptions,
 });
 
 })
-
 

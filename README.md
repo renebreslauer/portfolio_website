@@ -8,5 +8,5 @@
 - All SVG animations and navbar icons are my own work, created in Adobe Illustrator
 
 ### I plan on adding the following:
-- Gallery of work (add Github API)
+- Add work to the gallery, using the Github API
 - Mobile responsiveness

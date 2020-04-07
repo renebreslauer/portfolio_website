@@ -37,6 +37,7 @@
 #css {
   font-size: 15rem;
   margin-top: -4.5rem;
+  color: #4be3ac;
 }
 
 #javascript {
@@ -47,6 +48,7 @@
 #react {
   font-size: 9rem;
   margin-top: -2.5rem;
+  color: #4be3ac;
 }
 
 .letter {

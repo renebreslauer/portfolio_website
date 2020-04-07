@@ -80,8 +80,8 @@
 }
 
 .project1 {
-  width: 60ch;
-  height: 45ch;
+  width: 75ch;
+  height: 40ch;
   background: grey;
   background-image: url('../../components/assets/missionbooked.gif');
   border-radius: 5px;
@@ -99,8 +99,8 @@
 }
 
 .project2 {
-  width: 60ch;
-  height: 45ch;
+  width: 75ch;
+  height: 40ch;
   background: grey;
   background-image: url('../../components/assets/missionbooked.gif');
   border-radius: 5px;

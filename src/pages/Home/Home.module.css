@@ -332,6 +332,7 @@ h1 {
   transition: all ease-in-out 0.2s;
   cursor: default;
   text-shadow: 7px 7px #4be3ac;
+  color: lightgrey;
 
 }
 
@@ -348,7 +349,7 @@ h1 {
   transition: all ease-in-out 0.2s;
   cursor: default;
   text-shadow: 7px 7px #4be3ac;
-
+  color:lightgrey;
 }
 
 #name4:hover,
@@ -363,6 +364,7 @@ h1 {
   transition: all ease-in-out 0.2s;
   cursor: default;
   text-shadow: 5px 5px #4be3ac;
+  color:lightgrey;
 
 }
 

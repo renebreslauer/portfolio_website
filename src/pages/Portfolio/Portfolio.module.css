@@ -8,14 +8,14 @@
 }
 
 .project_one_wrapper {
-  height: 40rem;
+  height: 50rem;
   width: 60ch;
   margin-right: 5%;
   border-radius: 20px;
 }
 
 .project_two_wrapper {
-  height: 40rem;
+  height: 50rem;
   width: 60ch;
   margin-left: 5%;
   border-radius: 20px;
@@ -52,14 +52,14 @@
   flex-direction: row;
   bottom: 0ch;
   color: white;
-  margin-top: -6ch;
+  margin-top: -18ch;
   animation: slideInFromBottom 2s;
 }
 
 .project_footer a {
   font-size: 1rem;
   font-family: 'Rajdhani', sans-serif;
-  margin-left: 10%;
+  margin-left: 5%;
   color: white;
   text-decoration: none;
   position: relative;

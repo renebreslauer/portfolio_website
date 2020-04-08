@@ -7,15 +7,16 @@ function Skills() {
       <div className={styles.body_text}>
         <p>
           My focuses are frontend development and design. I am passionate about
-          building clean, functional apps using Javascript, React, and CSS
-          animations. Additionally, I am proficient in Adobe Illustrator,
+          building clean, functional apps using CSS, Javascript, and React. Additionally, I am proficient in Adobe Illustrator,
           Photoshop, XD, and Webflow.
         </p>
         <br></br>
         <p>
-          My experience includes full-stack applications, as well, have worked
-          with Node JS, Express JS, Ruby on Rails, and PostgreSQL.
+          My experience includes backend, as well, having built full-stack applications
+          using Node JS, Express JS, Ruby on Rails, and PostgreSQL.
         </p>
+        <br></br>
+        Eager to continue learning and improving my skillset, I am always exploring new languages and frameworks, while diving deeper into those that I use on a regular basis.
       </div>
       <div className={styles.skills_list}>
         <div id={styles.html} className={styles.skills_text}>

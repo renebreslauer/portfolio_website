@@ -40,7 +40,7 @@ function About() {
           <p className={styles.about_body}>
             These days I reside on Miami Beach with my three pet{' '}
             <span
-              class={styles.special_text}
+              className={styles.special_text}
               id={styles.rabbit_text}
               onMouseEnter={() => setIsShown(true)}
               onMouseLeave={() => setIsShown(false)}

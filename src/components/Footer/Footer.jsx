@@ -3,6 +3,7 @@ import styles from './Footer.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { Resume } from '../../components/assets/ReneBreslauer.pdf'
 
 library.add(fab)
 
@@ -18,7 +19,7 @@ function Footer() {
             </a>
           </p>
           <p>
-            Download my resume <a href="#">here</a>
+            Download my resume <a href={ Resume } target="_blank" rel="noopener noreferrer">here</a>
           </p>
           <p>Built with React - NodeJS - ExpressJS</p>
         </div>

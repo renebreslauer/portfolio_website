@@ -11,12 +11,17 @@ See the License for the specific language governing permissions and limitations 
 
 var express = require('express')
 var bodyParser = require('body-parser')
+var nodemailer = require('nodemailer')
+var coars = require('cors')
 var awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
 
 // declare a new express app
 var app = express()
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 app.use(awsServerlessExpressMiddleware.eventContext())
+
 
 // Enable CORS for all methods
 app.use(function(req, res, next) {
@@ -30,29 +35,22 @@ app.use(function(req, res, next) {
  * Example get method *
  **********************/
 
-app.get('/items', function(req, res) {
-  const items = ['hello, world']
+app.get('/', function(req, res) {
   res.json({success: 'get call succeed!', url: req.url});
 });
 
-app.get('/items/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
-});
+
 
 /****************************
 * Example post method *
 ****************************/
 
-app.post('/items', function(req, res) {
-  // Add your code here
+app.post('/api/v1', function(req, res) {
+    let data = req.body;
   res.json({success: 'post call succeed!', url: req.url, body: req.body})
 });
 
-app.post('/items/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
-});
+
 
 /****************************
 * Example put method *

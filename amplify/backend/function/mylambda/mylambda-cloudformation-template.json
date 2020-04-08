@@ -68,7 +68,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-portfoliowebsite-portfolio-185327-deployment",
-					"S3Key": "amplify-builds/mylambda-705432396c723642674f-build.zip"
+					"S3Key": "amplify-builds/mylambda-7430697477595a477462-build.zip"
 				}
 			}
 		},

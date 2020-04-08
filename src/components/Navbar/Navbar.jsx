@@ -61,7 +61,7 @@ function MyNavbar() {
           id={styles.contact_link}
           activeClassName={styles.nav_link_active}
         >
-          <p className={styles.link_text} id styles={styles.contact_link}>Contact</p>
+          <p className={styles.link_text} id={styles.contact_link}>Contact</p>
           <img
             src={ContactIcon}
             className={styles.nav_icon}

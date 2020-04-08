@@ -25,7 +25,7 @@ function Footer() {
         <div className={styles.links_container}>
           <p className={styles.link_title}>Let's connect:</p>
           <p>
-            <a target="_blank" href="https://github.com/renebreslauer">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/renebreslauer">
               <FontAwesomeIcon
                 icon={['fab', 'github']}
                 className={styles.footer_icon}
@@ -34,7 +34,7 @@ function Footer() {
             </a>
           </p>
           <p>
-            <a target="_blank" href="https://linkedin.com/in/renebreslauer">
+            <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/renebreslauer">
               <FontAwesomeIcon
                 icon={['fab', 'linkedin-in']}
                 className={styles.footer_icon}
@@ -43,7 +43,7 @@ function Footer() {
             </a>
           </p>
           <p>
-            <a target="_blank" href="#">
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ReneBreslauer/">
               <FontAwesomeIcon
                 icon={['fab', 'twitter']}
                 className={styles.footer_icon}
@@ -52,7 +52,7 @@ function Footer() {
             </a>
           </p>
           <p>
-            <a target="_blank" href="#">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/renebreslauer">
               <FontAwesomeIcon
                 icon={['fab', 'behance']}
                 className={styles.footer_icon}
@@ -61,7 +61,7 @@ function Footer() {
             </a>
           </p>
           <p>
-            <a target="_blank" href="#">
+            <a target="_blank" rel="noopener noreferrer" href="https://dribbble.com/renebreslauer">
               <FontAwesomeIcon
                 icon={['fab', 'dribbble']}
                 className={styles.footer_icon}

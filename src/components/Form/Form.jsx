@@ -25,7 +25,7 @@ class Form extends Component {
           message: this.state.message
       }
       
-      axios.post('/api/v1', data)
+      axios.post('localhost:4444/api/v1', data)
       .then( res => {
           this.setState({ sent: true }, this.resetForm())
       })
@@ -59,7 +59,7 @@ class Form extends Component {
                 className={styles.name_control}
                 autoComplete="off"
                 value={this.state.name}
-                onChange={e => this.setState({ name: e.target.value})} name="name"  type="text"  />
+                onChange={e => this.setState({ name: e.target.value})} name="name"  />
               
             </div>
           </div>
@@ -71,8 +71,8 @@ class Form extends Component {
               className={styles.message_control}
               aria-describedby="emailHelp"
               autoComplete="off"
-              value={this.state.email}
-                 onChange={(e) => this.setState({ email: e.target.value})} name="email" type="email" required value={this.state.email} />
+              
+                 onChange={(e) => this.setState({ email: e.target.value})} name="email"required value={this.state.email} />
   
             
           </div>

@@ -58,6 +58,7 @@ function About() {
                 src={Rabbits}
                 id={styles.rabbit_image}
                 className={styles.hidden_image}
+                alt="Rabbits"
               />
             </div>
           </>

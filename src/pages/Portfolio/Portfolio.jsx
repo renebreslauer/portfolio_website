@@ -28,7 +28,7 @@ const PortfolioProjects = () => {
           <div className={styles.project_header}>Mission Booked</div>
           <div className={styles.project_subtitle}>Created while at Wyncode Academy, Mission Booked is a React-Rails app with a PostgreSQL database. It is designed to help people find volunteer opportunities and charitable organizations tailored to their interests.</div>
           <div className={styles.project_body}>
-         <a target="_blank" href="https://github.com/renebreslauer/C36_better_together_now_2"><animated.div
+         <a target="_blank" rel="noopener noreferrer" href="https://github.com/renebreslauer/C36_better_together_now_2"><animated.div
               className={styles.project1}
               onMouseMove={({ clientX: x, clientY: y }) =>
                 setProject1({ xys: calc(x, y) })
@@ -38,11 +38,12 @@ const PortfolioProjects = () => {
             ></animated.div></a>
           </div>
           <div className={styles.project_footer}>
-            <a target="_blank" href="https://mission-booked.herokuapp.com/">
+            <a target="_blank" rel="noopener noreferrer" href="https://mission-booked.herokuapp.com/">
               Live Site
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/renebreslauer/C36_better_together_now_2"
             >
               Source Code
@@ -54,7 +55,7 @@ const PortfolioProjects = () => {
           <div className={styles.project_subtitle}>Also created at Wyncode Academy, FurEver is a petfinding app built with React and Express JS, which utilizes Petfinder's O-Auth API. FurEver is designed to help match adoptable pets with forever homes in a fun, user-friendly interface.</div>
 
           <div className={styles.project_body}>
-            <a target="_blank" href="https://github.com/renebreslauer/C36_midterm_carolina_elias_rene_tristan"><animated.div
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/renebreslauer/C36_midterm_carolina_elias_rene_tristan"><animated.div
               className={styles.project2}
               onMouseMove={({ clientX: x, clientY: y }) =>
                 setProject2({ xys: calc(x, y) })
@@ -64,11 +65,13 @@ const PortfolioProjects = () => {
             ></animated.div></a>
           </div>
           <div className={styles.project_footer}>
-            <a target="_blank" href="http://fureverapp.herokuapp.com/">
+            <a target="_blank" 
+            rel="noopener noreferrer" href="http://fureverapp.herokuapp.com/">
               Live Site
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/renebreslauer/C36_midterm_carolina_elias_rene_tristan"
             >
               Source Code

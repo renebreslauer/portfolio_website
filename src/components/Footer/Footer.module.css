@@ -80,3 +80,9 @@ footer {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 640px) {
+  footer {
+    display: none;
+  }
+}

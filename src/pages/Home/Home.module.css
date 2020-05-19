@@ -2,7 +2,6 @@
 .main_container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   z-index: 1;
 }
 
@@ -27,11 +26,9 @@ h1 {
 .h1_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   z-index: 1;
-  position: absolute;
-  left: 20%;
-  top: 30%;
+  margin-left: 20vw;
+  margin-top: 30vh;
 }
 
 .svg_animation {
@@ -46,7 +43,6 @@ h1 {
 
 .final_r {
   position: absolute;
-  place-self: center;
   height: 500px;
   width: 400px;
   opacity: 0;
@@ -478,28 +474,59 @@ h1 {
   }
 }
 
-.small_screen {
-  display: none;
-}
-
 @media (max-width: 1000px) {
-  .large_screen {
-    display: none;
+  .h1_container {
+    margin-left: 0;
   }
-  .small_screen {
-    display: flex;
+
+  .top {
+    margin-top: -10vh;
+  }
+  .main_container {
     justify-content: center;
   }
-  .final_r_mobile {
-    position: absolute;
-    height: 300px;
-    width: 200px;
+  .subtitle_container {
+    text-align: center;
+    margin-top: 20vh;
+  }
+  .svg_animation {
+    width: 15rem;
+    display: flex;
+    right: auto;
+  }
+  .final_r {
+    width: 15rem;
+  }
+}
+@media (max-width: 640px) {
+}
+
+@keyframes fade {
+  0% {
     opacity: 1;
-    animation-name: show;
-    animation-delay: 3s;
-    animation-duration: 2s;
-    animation-fill-mode: backwards;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 400px) {
+  .main_container {
+    height: 100vh;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .svg_animation {
+    width: 10rem;
+    top: 20%;
+  }
+  .final_r {
+    width: 10rem;
+  }
+  .subtitle_container {
+    margin-top: 30vh;
   }
 }

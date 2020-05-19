@@ -1,65 +1,8 @@
 @import '../../App.scss';
 
-.about_wrapper {
-  padding-top: 25ch;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin-left: -5ch;
-}
 .about_content {
   flex-wrap: wrap;
   width: 50%;
-}
-.about_header {
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: bold;
-  color: #94fc13;
-  text-shadow: 7px 7px black;
-  font-size: 5rem;
-  padding-left: 1ch;
-}
-.about_letter {
-  transition: all ease-in-out 1s;
-}
-#about1 {
-  display: inline-block;
-  font-size: 9rem;
-  transform: rotate(12deg);
-  margin-right: -5px;
-  animation: scaleUp 2s, rotateIn3 2s;
-  color: #4be3ac;
-}
-
-#about2,
-#about4 {
-  display: inline-block;
-  animation: scaleUp 1s, rotateIn1 1s;
-}
-
-#about3,
-#about5 {
-  display: inline-block;
-  animation: scaleUp 1s, rotateIn2 1s;
-}
-
-#about2:hover,
-#about4:hover {
-  display: inline-block;
-  color: white;
-  transform: scale(1.7) rotate(-7deg);
-  transition: all ease-in-out 0.2s;
-  cursor: default;
-}
-
-#about1:hover,
-#about3:hover,
-#about5:hover {
-  display: inline-block;
-  color: white;
-  transform: scale(1.5) rotate(7deg);
-  transition: all ease-in-out 0.2s;
-  cursor: default;
 }
 
 .about_body {
@@ -114,4 +57,14 @@
   position: absolute;
   animation: scaleUp 1s;
   transition: scaleUp ease-in-out 1s;
+}
+
+@media (max-width: 490px) {
+  .about_body {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .special_text {
+    font-size: 1rem;
+  }
 }

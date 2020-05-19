@@ -24,7 +24,7 @@ function Footer() {
               here
             </a>
           </p>
-          <p>Built with React - NodeJS - ExpressJS</p>
+          <p>Built with React</p>
         </div>
         <div className={styles.links_container}>
           <p className={styles.link_title}>Let's connect:</p>

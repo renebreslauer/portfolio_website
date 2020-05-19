@@ -1,0 +1,26 @@
+@import '../../App.scss';
+
+.nav_overlay_wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav_overlay_internal a {
+  text-decoration: none;
+  color: $color-primary-mid;
+  font-size: 4rem;
+}
+
+.nav_overlay_external {
+  margin-top: 10rem;
+  a {
+    color: $color-primary-mid;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}

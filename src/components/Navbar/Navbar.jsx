@@ -81,9 +81,15 @@ function MyNavbar() {
             />
           </NavLink>
         </div>
-        <div className={styles.logo_mobile}>
-          <img src={Final_R} className={styles.logo_mobile_image} alt='logo' />
-        </div>
+        <NavLink to='/NavOverlay'>
+          <div className={styles.logo_mobile}>
+            <img
+              src={Final_R}
+              className={styles.logo_mobile_image}
+              alt='logo'
+            />
+          </div>
+        </NavLink>
       </div>
     </>
   )

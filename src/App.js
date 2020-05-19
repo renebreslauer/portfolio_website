@@ -2,7 +2,14 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.scss'
 import { Navbar, Footer } from '../src/components/index.js'
-import { Home, About, Contact, Skills, Portfolio } from './pages/index.js'
+import {
+  Home,
+  About,
+  Contact,
+  Skills,
+  Portfolio,
+  NavOverlay,
+} from './pages/index.js'
 
 function App() {
   return (
@@ -10,6 +17,9 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
+          <Route path='/NavOverlay'>
+            <NavOverlay />
+          </Route>
           <Route path='/About'>
             <About />
           </Route>

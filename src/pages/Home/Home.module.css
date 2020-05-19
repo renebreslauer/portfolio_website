@@ -510,18 +510,26 @@ h1 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .main_container {
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .h1_container {
+    margin-top: 25vh;
   }
   h1 {
-    font-size: 4rem;
-    text-align: center;
+    font-size: 5rem;
+    text-align: left;
+    animation: none;
+    transform: rotate(0);
   }
   .svg_animation {
     width: 10rem;
     top: 20%;
+    opacity: 0.2;
   }
   .final_r {
     width: 10rem;

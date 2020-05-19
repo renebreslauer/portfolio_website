@@ -1,0 +1,121 @@
+@import '../../App.scss';
+.title_animation {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.name_letter {
+  display: inline-block;
+  transition: ease-in-out 1s;
+}
+
+#name1,
+#name3,
+#name5,
+#name6,
+#name9,
+#name13,
+#name16,
+#name18,
+#name22 {
+  display: inline-block;
+  animation: rotateIn0 2s;
+}
+
+#name2,
+#name7,
+#name10,
+#name12,
+#name14,
+#name17,
+#name21 {
+  display: inline-block;
+  animation: rotateIn2 2s;
+}
+
+#name4,
+#name8,
+#name11,
+#name15,
+#name19,
+#name20 {
+  display: inline-block;
+  animation: rotateIn3 2s;
+}
+
+#name1:hover,
+#name3:hover,
+#name5:hover,
+#name6:hover,
+#name9:hover,
+#name13:hover,
+#name16:hover,
+#name18:hover,
+#name22:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.2) rotate(-3deg);
+  transition: all ease-in-out 0.2s;
+  cursor: default;
+  text-shadow: 7px 7px #4be3ac;
+  color: lightgrey;
+}
+
+#name2:hover,
+#name7:hover,
+#name10:hover,
+#name12:hover,
+#name14:hover,
+#name17:hover,
+#name21:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.5) rotate(5deg);
+  transition: all ease-in-out 0.2s;
+  cursor: default;
+  text-shadow: 7px 7px #4be3ac;
+  color: lightgrey;
+}
+
+#name4:hover,
+#name8:hover,
+#name11:hover,
+#name15:hover,
+#name19:hover,
+#name20:hover {
+  display: inline-block;
+  color: white;
+  transform: scale(1.7) rotate(2deg);
+  transition: all ease-in-out 0.2s;
+  cursor: default;
+  text-shadow: 5px 5px #4be3ac;
+  color: lightgrey;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 10rem;
+  background: none;
+  z-index: 1;
+  transform: rotate(9deg);
+  color: white;
+  animation: fadeIn 2s;
+  animation: rotateIn 3s;
+  text-shadow: 7px 7px black;
+  display: flex;
+  flex-wrap: none;
+  z-index: 2;
+}
+
+.h1_container {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  margin-left: 20vw;
+  margin-top: 30vh;
+}
+
+@media (max-width: 1150px) {
+  h1 {
+    font-size: 8rem;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import styles from './About.module.css'
-import Rabbits from '../../components/assets/rabbits_image.jpg'
+import styles from './About.module.scss'
+import Rabbits from '../../assets/rabbits_image.jpg'
 
 function About() {
   const [isShown, setIsShown] = useState(false)
@@ -58,7 +58,7 @@ function About() {
                 src={Rabbits}
                 id={styles.rabbit_image}
                 className={styles.hidden_image}
-                alt="Rabbits"
+                alt='Rabbits'
               />
             </div>
           </>

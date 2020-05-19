@@ -103,6 +103,10 @@
   padding-right: 1ch;
   padding-top: 1.5ch;
 }
+
+.logo_mobile {
+  display: none;
+}
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-100%);
@@ -151,5 +155,14 @@
 @media (max-width: 800px) {
   .nav_wrapper {
     display: none;
+  }
+  .logo_mobile {
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    &_image {
+      width: 5rem;
+    }
   }
 }

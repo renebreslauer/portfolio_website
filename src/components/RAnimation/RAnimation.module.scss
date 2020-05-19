@@ -1,0 +1,35 @@
+@import '../../App.scss';
+
+.svg_container {
+  position: relative;
+  z-index: -1;
+}
+.final_r {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  opacity: 0;
+  animation-name: show;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+#hood {
+  fill-opacity: 0;
+  stroke: #94fc13;
+  stroke-width: 1;
+  stroke-dasharray: 3309;
+  stroke-dashoffset: 3309;
+  animation-iteration-count: 1;
+  animation: draw 5s linear;
+  animation-delay: 1s;
+}
+
+@media (max-width: 749px) {
+  .svg_container {
+    display: none;
+  }
+}

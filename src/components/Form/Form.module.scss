@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 #contact_form {
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@
   border: none;
   padding: 20px;
   width: 55ch;
-  background-color: #384d56;
+  background-color: $color-primary-dark;
   color: white;
   margin: 10px;
   font-size: 18px;
@@ -20,7 +22,7 @@
 }
 .name_control:focus {
   outline: none;
-  border-bottom: 3px solid #94fc13;
+  border-bottom: 3px solid $color-primary-light;
 }
 
 .message_control {
@@ -36,7 +38,7 @@
 }
 .message_control:focus {
   outline: none;
-  border-bottom: 3px solid #94fc13;
+  border-bottom: 3px solid $color-primary-light;
 }
 
 .input_group {
@@ -49,8 +51,8 @@ textarea {
   border: none;
   padding: 20px;
   resize: none;
-  background-color: #384d56;
-  color: white;
+  background-color: $color-primary-dark;
+  color: $color-white;
   margin: 10px;
   font-size: 18px;
   width: 55ch;
@@ -59,7 +61,7 @@ textarea {
 
 textarea:focus {
   outline: none;
-  border-bottom: 3px solid #94fc13;
+  border-bottom: 3px solid $color-primary-light;
 }
 
 ::placeholder {

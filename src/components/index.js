@@ -1,2 +1,6 @@
 export { default as Navbar } from '../components/Navbar/Navbar'
 export { default as Footer } from '../components/Footer/Footer'
+export { default as GooButton } from '../components/GooButton/GooButton'
+export { default as RAnimation } from '../components/RAnimation/RAnimation'
+export { default as Subtitle } from '../components/Subtitle/Subtitle'
+export { default as TitleAnimation } from '../components/TitleAnimation/TitleAnimation'

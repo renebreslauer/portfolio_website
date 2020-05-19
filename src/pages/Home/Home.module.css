@@ -490,15 +490,14 @@ h1 {
     margin-top: 20vh;
   }
   .svg_animation {
-    width: 15rem;
+    width: 10rem;
     display: flex;
     right: auto;
+    top: 30vh;
   }
   .final_r {
-    width: 15rem;
+    width: 10rem;
   }
-}
-@media (max-width: 640px) {
 }
 
 @keyframes fade {
@@ -511,14 +510,15 @@ h1 {
 }
 
 @media (max-width: 450px) {
-  .main_container {
+  .home_wrapper {
     height: 100vh;
     overflow: hidden;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   .h1_container {
-    margin-top: 25vh;
+    margin-top: 20vh;
   }
   h1 {
     font-size: 5rem;
@@ -528,13 +528,28 @@ h1 {
   }
   .svg_animation {
     width: 10rem;
-    top: 20%;
     opacity: 0.2;
+    top: 27vh;
   }
   .final_r {
     width: 10rem;
   }
   .subtitle_container {
-    margin-top: 30vh;
+    position: relative;
+    top: 20vh;
+  }
+}
+
+@media (max-width: 450px) and (max-height: 568px) {
+  .h1_container {
+    margin-top: 40vh;
+  }
+
+  .svg_animation {
+    top: 18vh;
+  }
+
+  .subtitle_container {
+    top: 10vh;
   }
 }

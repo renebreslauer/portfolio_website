@@ -1,26 +1,11 @@
-.skills_wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  overflow: hidden;
-}
-
-.body_text {
-  width: 40%;
-  padding-top: 20%;
-  margin-right: 5%;
-  color: white;
-  font-family: 'Rajdhani', sans-serif;
-  animation: fadeIn 2s;
-  font-size: 1.1rem;
-}
+@import '../../App.scss';
 
 .skills_list {
-  padding-top: 10%;
   margin-left: 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .skills_text {
@@ -133,46 +118,25 @@
   cursor: default;
 }
 
-@keyframes scaleUp {
-  from {
-    transform: scale(0);
+@media (max-width: 500px) {
+  .skills_list {
+    margin-left: 0;
   }
-  to {
-    transform: scale(1);
+  #css {
+    font-size: 4rem;
+    margin-top: -1rem;
   }
-}
+  #html {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  #javascript {
+    font-size: 1rem;
+    margin-top: -1rem;
+  }
 
-@keyframes rotateIn1 {
-  from {
-    transform: rotate(9deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes rotateIn2 {
-  from {
-    transform: rotate(-20deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-@keyframes rotateIn3 {
-  from {
-    transform: rotate(20deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+  #react {
+    font-size: 3rem;
+    margin-top: 0rem;
   }
 }

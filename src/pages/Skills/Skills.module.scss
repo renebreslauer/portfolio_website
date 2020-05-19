@@ -1,0 +1,41 @@
+.skills_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.body_text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 40%;
+  margin-right: 5%;
+  color: white;
+  font-family: 'Rajdhani', a sans-serif;
+  animation: fadeIn 2s;
+  font-size: 2rem;
+}
+
+@media (max-width: 750px) {
+  .skills_wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .body_text {
+    font-size: 1.2rem;
+    p {
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .body_text {
+    font-size: 1rem;
+  }
+}

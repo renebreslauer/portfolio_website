@@ -101,7 +101,7 @@
 
 #portfolio_link {
   padding-right: 1ch;
- padding-top: 1.5ch;
+  padding-top: 1.5ch;
 }
 @keyframes slideInFromTop {
   0% {
@@ -145,5 +145,11 @@
   }
   to {
     transform: scale(1.7);
+  }
+}
+
+@media (max-width: 800px) {
+  .nav_wrapper {
+    display: none;
   }
 }

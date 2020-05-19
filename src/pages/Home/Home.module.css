@@ -518,7 +518,7 @@ h1 {
     align-items: center;
   }
   .h1_container {
-    margin-top: 20vh;
+    margin-top: 10vh;
   }
   h1 {
     font-size: 5rem;
@@ -529,7 +529,7 @@ h1 {
   .svg_animation {
     width: 10rem;
     opacity: 0.2;
-    top: 27vh;
+    top: 20vh;
   }
   .final_r {
     width: 10rem;

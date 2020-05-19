@@ -15,11 +15,14 @@ const HomeWrapper = styled.div`
   width: 100vw;
   height: 100vh;
 
-  @media (max-width: 750px) {
+  @media (max-width: 800px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     align-items: center;
     justify-itmes: center;
+    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
   }
 `
 const HomeLeft = styled.div`

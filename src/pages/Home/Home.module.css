@@ -553,3 +553,17 @@ h1 {
     top: 10vh;
   }
 }
+
+@media (max-width: 450px) and (max-height: 667px) and (min-height: 569px) {
+  .h1_container {
+    margin-top: 35vh;
+  }
+
+  .svg_animation {
+    top: 20vh;
+  }
+
+  .subtitle_container {
+    top: 10vh;
+  }
+}

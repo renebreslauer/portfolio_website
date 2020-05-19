@@ -154,7 +154,7 @@
 
 @media (max-width: 800px) {
   .nav_wrapper {
-    background: none;
+    background: black;
   }
   .nav_body {
     display: none;
@@ -167,7 +167,6 @@
   }
   .logo_mobile {
     display: flex;
-    position: absolute;
     top: 1rem;
     right: 1rem;
     &_image {

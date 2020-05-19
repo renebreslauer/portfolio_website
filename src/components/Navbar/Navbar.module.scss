@@ -154,13 +154,22 @@
 
 @media (max-width: 800px) {
   .nav_wrapper {
+    background: none;
+  }
+  .nav_body {
+    display: none;
+  }
+  .nav_logo {
+    display: none;
+  }
+  .nav_link {
     display: none;
   }
   .logo_mobile {
     display: flex;
     position: absolute;
-    top: 0rem;
-    right: 0rem;
+    top: 1rem;
+    right: 1rem;
     &_image {
       width: 5rem;
     }

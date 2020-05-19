@@ -21,8 +21,6 @@ const HomeWrapper = styled.div`
     align-items: center;
     justify-itmes: center;
     padding: 1rem;
-    width: 100vw;
-    height: 100vh;
   }
 `
 const HomeLeft = styled.div`

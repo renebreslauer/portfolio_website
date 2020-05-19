@@ -282,7 +282,6 @@ h1 {
   transition: ease-in-out 1s;
 }
 
-
 #name1,
 #name3,
 #name5,
@@ -333,7 +332,6 @@ h1 {
   cursor: default;
   text-shadow: 7px 7px #4be3ac;
   color: lightgrey;
-
 }
 
 #name2:hover,
@@ -349,7 +347,7 @@ h1 {
   transition: all ease-in-out 0.2s;
   cursor: default;
   text-shadow: 7px 7px #4be3ac;
-  color:lightgrey;
+  color: lightgrey;
 }
 
 #name4:hover,
@@ -364,8 +362,7 @@ h1 {
   transition: all ease-in-out 0.2s;
   cursor: default;
   text-shadow: 5px 5px #4be3ac;
-  color:lightgrey;
-
+  color: lightgrey;
 }
 
 @keyframes scaleUp {
@@ -411,7 +408,6 @@ h1 {
     opacity: 1;
   }
 }
-
 
 @supports ((-webkit-filter: url('#goo')) or (filter: url('#goo'))) {
   .blob_btn:hover .blob_btn__blob {
@@ -479,5 +475,31 @@ h1 {
   }
   to {
     transform: rotate(9deg);
+  }
+}
+
+.small_screen {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .large_screen {
+    display: none;
+  }
+  .small_screen {
+    display: flex;
+    justify-content: center;
+  }
+  .final_r_mobile {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    opacity: 1;
+    animation-name: show;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
   }
 }

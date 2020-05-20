@@ -29,6 +29,7 @@ const HomeLeft = styled.div`
   margin-top: 15rem;
   @media (max-width: 750px) {
     margin-left: 0;
+    margin-top: 0;
   }
 `
 

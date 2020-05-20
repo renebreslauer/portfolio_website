@@ -168,7 +168,8 @@
 
 @media (max-width: 1050px) {
   .portfolio_wrapper {
-    margin-top: 20rem;
+    margin-left: 3rem;
+    margin-top: 15rem;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -177,10 +178,10 @@
     align-content: center;
   }
   .project_one_wrapper {
-    min-height: 55vh;
+    min-height: 60vh;
   }
   .project_two_wrapper {
-    min-height: 55vh;
+    min-height: 60vh;
     margin-left: -10%;
   }
   .project1 {

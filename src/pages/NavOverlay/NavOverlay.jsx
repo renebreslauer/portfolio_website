@@ -21,6 +21,9 @@ class NavOverlay extends React.Component {
           <NavLink to='/Skills' label='skills'>
             <h2>Skills</h2>
           </NavLink>
+          <NavLink to='/Portfolio' label='portfolio'>
+            <h2>Portfolio</h2>
+          </NavLink>
           <NavLink to='/Contact' label='contact'>
             <h2>Contact</h2>
           </NavLink>

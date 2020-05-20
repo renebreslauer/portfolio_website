@@ -63,34 +63,34 @@ class Form extends Component {
               name="name"
             />
           </div>
-        </div>
-        <div className={styles.form_group}>
-          <input
-            id="email"
-            type="email"
-            placeholder="Email"
-            className={styles.name_control}
-            aria-describedby="emailHelp"
-            autoComplete="off"
-            onChange={(e) => this.setState({ email: e.target.value })}
-            name="email"
-            required
-            value={this.state.email}
-          />
-        </div>
+          <div className={styles.form_group}>
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              className={styles.name_control}
+              aria-describedby="emailHelp"
+              autoComplete="off"
+              onChange={(e) => this.setState({ email: e.target.value })}
+              name="email"
+              required
+              value={this.state.email}
+            />
+          </div>
 
-        <div className={styles.form_group}>
-          <textarea
-            id="message"
-            className={styles.message_control}
-            type="text"
-            placeholder="Message"
-            rows="5"
-            onChange={(e) => this.setState({ message: e.target.value })}
-            name="message"
-            value={this.state.message}
-            required
-          />
+          <div className={styles.form_group}>
+            <textarea
+              id="message"
+              className={styles.message_control}
+              type="text"
+              placeholder="Message"
+              rows="5"
+              onChange={(e) => this.setState({ message: e.target.value })}
+              name="message"
+              value={this.state.message}
+              required
+            />
+          </div>
         </div>
         <div className={styles.buttons}>
           <button type="submit" className={styles.blob_btn}>

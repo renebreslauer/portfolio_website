@@ -1,10 +1,13 @@
 .portfolio_wrapper {
-  padding-top: 10%;
   display: flex;
   justify-content: center;
   flex-direction: row;
+  align-content: center;
+  align-items: center;
   overflow: hidden;
   animation: fadeIn 2s;
+  height: 100vh;
+  width: 100vw;
 }
 
 .project_one_wrapper {
@@ -19,6 +22,7 @@
   width: 60ch;
   margin-left: 5%;
   border-radius: 20px;
+  margin-top: -2.6rem;
 }
 
 .project_header {
@@ -160,5 +164,22 @@
   }
   to {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 1050px) {
+  .portfolio_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .project_one_wrapper {
+    height: 50vh;
+  }
+  .project_two_wrapper {
+    height: 50vh;
+    margin-left: 0;
   }
 }

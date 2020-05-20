@@ -167,9 +167,8 @@
     display: none;
   }
   .logo_mobile {
-    display: flex;
+    display: contents;
     right: 0;
-    position: absolute;
     margin-top: 0.5rem;
     margin-left: 3rem;
     &_image {

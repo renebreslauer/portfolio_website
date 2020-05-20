@@ -118,25 +118,25 @@
   cursor: default;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .skills_list {
     margin-left: 0;
   }
   #css {
-    font-size: 4rem;
-    margin-top: -1rem;
+    font-size: 10rem;
+    margin-top: -2rem;
   }
   #html {
-    font-size: 3rem;
+    font-size: 6.5rem;
     margin-top: 2rem;
   }
   #javascript {
-    font-size: 1rem;
-    margin-top: -1rem;
+    font-size: 3rem;
+    margin-top: -2rem;
   }
 
   #react {
-    font-size: 3rem;
-    margin-top: 0rem;
+    font-size: 5.7rem;
+    margin-top: -1rem;
   }
 }

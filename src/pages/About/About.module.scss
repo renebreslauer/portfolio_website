@@ -54,12 +54,17 @@
   width: 20ch;
   height: 20ch;
   border-radius: 50%;
+  top: 20vh;
+  right: 20vw;
   position: absolute;
   animation: scaleUp 1s;
   transition: scaleUp ease-in-out 1s;
 }
 
 @media (max-width: 490px) {
+  .about_content {
+    width: 60%;
+  }
   .about_body {
     font-size: 1rem;
     line-height: 1.5rem;

@@ -60,12 +60,14 @@
   font-family: 'Fjalla One', sans-serif;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
+  transition: 1s ease-in-out;
 }
 
 .nav_overlay_internal a {
   text-decoration: none;
   color: $color-primary-mid;
   font-size: 4rem;
+  transition: 0.3s ease-in-out;
 
   &:hover {
     color: white;
@@ -76,6 +78,8 @@
 
 .nav_overlay_external {
   margin-top: 5rem;
+  transition: 0.3s ease-in-out;
+
   a {
     color: $color-primary-mid;
     font-size: 2rem;
@@ -93,6 +97,12 @@
     position: fixed;
     margin-top: 2rem;
     margin-right: 2rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: rotate(-9deg) scale(2) translate(-1rem, 1rem);
+      transition: all 0.5s ease-in-out;
+    }
   }
 }
 @media (max-width: 400px) {

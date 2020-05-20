@@ -177,6 +177,7 @@
     align-items: center;
     justify-content: center;
     align-content: center;
+    width: 90vw;
   }
   .project_one_wrapper {
     min-height: 60vh;

@@ -8,19 +8,31 @@
   text-align: center;
   justify-content: center;
   flex-direction: column;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 .nav_overlay_internal a {
   text-decoration: none;
   color: $color-primary-mid;
   font-size: 4rem;
+
+  &:hover {
+    color: white;
+    text-shadow: 7px 7px black;
+    transform: translateY(-3rem);
+  }
 }
 
 .nav_overlay_external {
-  margin-top: 10rem;
+  margin-top: 5rem;
   a {
     color: $color-primary-mid;
     font-size: 2rem;
     padding: 1rem;
+    &:hover {
+      color: white;
+    }
   }
 }

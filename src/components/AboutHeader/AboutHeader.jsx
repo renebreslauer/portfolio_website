@@ -6,6 +6,9 @@ const AboutHeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 50%;
+  @media (max-width: 700px) {
+    width: 70%;
+  }
 `
 
 const HiddenImageContainer = styled.div`

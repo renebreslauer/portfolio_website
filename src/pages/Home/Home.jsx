@@ -12,6 +12,7 @@ const HomeWrapper = styled.div`
   grid-template-columns: 50vw auto;
   justify-items: center;
   align-items: center;
+  align-content: center;
   width: 100vw;
   height: 100vh;
 
@@ -25,7 +26,7 @@ const HomeWrapper = styled.div`
 `
 const HomeLeft = styled.div`
   margin-left: 10vw;
-
+  margin-top: 15rem;
   @media (max-width: 750px) {
     margin-left: 0;
   }
@@ -33,6 +34,7 @@ const HomeLeft = styled.div`
 
 const HomeRight = styled.div`
   margin-right: 10vw;
+ 
   }
 `
 
@@ -42,7 +44,7 @@ function Home() {
       <HomeWrapper>
         <HomeLeft>
           <TitleAnimation />
-          <Subtitle text='[ Developer + Designer ]' />
+          <Subtitle text="[ Developer + Designer ]" />
           <GooButton text="Let's Chat" />
         </HomeLeft>
         <HomeRight>

@@ -4,7 +4,6 @@
   flex-direction: row;
   align-content: center;
   align-items: center;
-
   animation: fadeIn 2s;
   height: 100vh;
   width: 100vw;
@@ -13,14 +12,14 @@
 .project_one_wrapper {
   height: 50rem;
   width: 60ch;
-  margin-right: 5%;
+  margin-right: 10%;
   border-radius: 20px;
 }
 
 .project_two_wrapper {
   height: 50rem;
   width: 60ch;
-  margin-left: 5%;
+  margin-left: 10%;
   border-radius: 20px;
   margin-top: -2.6rem;
 }
@@ -31,14 +30,14 @@
   padding: 3ch;
   padding-bottom: 5ch;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
   animation: slideInFromTop 1s;
 }
 
 .project_subtitle {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
   margin-bottom: 5ch;
   animation: slideInFromTop 1s;
@@ -60,7 +59,7 @@
 }
 
 .project_footer a {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: 'Rajdhani', sans-serif;
   margin-left: 5%;
   color: white;
@@ -182,7 +181,7 @@
   }
   .project_two_wrapper {
     min-height: 55vh;
-    margin-left: -2%;
+    margin-left: -10%;
   }
   .project1 {
     height: 30ch;

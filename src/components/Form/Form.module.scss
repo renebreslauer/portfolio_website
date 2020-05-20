@@ -223,3 +223,12 @@ textarea:focus {
     width: 35ch;
   }
 }
+
+@media (max-width: 350px) {
+  .name_control {
+    width: 25ch;
+  }
+  .message_control {
+    width: 25ch;
+  }
+}

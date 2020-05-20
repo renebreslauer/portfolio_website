@@ -22,7 +22,6 @@
   width: 60ch;
   margin-left: 10%;
   border-radius: 20px;
-  margin-top: -2.6rem;
 }
 
 .project_header {
@@ -167,7 +166,25 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
+  .portfolio_wrapper {
+    margin: 3rem;
+  }
+  .portfolio_one_wrapper {
+    width: 40ch;
+  }
+  .portfolio_two_wrapper {
+    width: 40ch;
+  }
+  .project1 {
+    width: 50ch;
+  }
+  .project2 {
+    width: 50ch;
+  }
+}
+
+@media (max-width: 800px) {
   .portfolio_wrapper {
     margin-left: 3rem;
     margin-top: 15rem;
@@ -193,5 +210,38 @@
   .project2 {
     height: 30ch;
     width: 50ch;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio_wrapper {
+    margin-top: 25rem;
+    margin-left: 8rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 50vw;
+  }
+  .project_one_wrapper {
+    min-height: 80vh;
+    width: 40ch;
+  }
+  .project_two_wrapper {
+    min-height: 80vh;
+    width: 40ch;
+  }
+  .project1 {
+    height: 30ch;
+    width: 30ch;
+  }
+  .project2 {
+    height: 30ch;
+    width: 30ch;
+  }
+  .project_subtitle {
+    font-size: 1rem;
   }
 }

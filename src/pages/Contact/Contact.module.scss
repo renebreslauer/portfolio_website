@@ -10,6 +10,7 @@
   height: 100%;
   margin-top: 5rem;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .header_field {
@@ -61,5 +62,11 @@
   }
   .typewriter h2 {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .contact_wrapper {
+    margin-top: 8rem;
   }
 }

@@ -36,3 +36,9 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .nav_overlay_internal a {
+    font-size: 3rem;
+  }
+}

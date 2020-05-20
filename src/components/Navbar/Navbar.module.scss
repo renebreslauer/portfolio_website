@@ -176,6 +176,7 @@
     display: flex;
     top: 0;
     right: 0;
+    z-index: 100;
 
     &_image {
       width: 5rem;

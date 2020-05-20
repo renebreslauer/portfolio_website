@@ -12,14 +12,14 @@ function MyNavbar() {
     <>
       <div className={styles.nav_wrapper}>
         <div className={styles.nav_logo}>
-          <NavLink to='/' label='home'>
-            <img src={Final_R} className={styles.logo_icon} alt='R logo' />
+          <NavLink to="/" label="home">
+            <img src={Final_R} className={styles.logo_icon} alt="R logo" />
           </NavLink>
         </div>
         <div className={styles.nav_body}></div>
         <div className={styles.nav_div} id={styles.about_div}>
           <NavLink
-            to='/About'
+            to="/About"
             className={styles.nav_link}
             id={styles.about_link}
             activeClassName={styles.nav_link_active}
@@ -27,12 +27,12 @@ function MyNavbar() {
             <p className={styles.link_text} id={styles.about_link}>
               About
             </p>
-            <img src={AboutIcon} className={styles.nav_icon} alt='About icon' />
+            <img src={AboutIcon} className={styles.nav_icon} alt="About icon" />
           </NavLink>
         </div>
         <div className={styles.nav_div} id={styles.skills_div}>
           <NavLink
-            to='/Skills'
+            to="/Skills"
             className={styles.nav_link}
             activeClassName={styles.nav_link_active}
           >
@@ -42,13 +42,13 @@ function MyNavbar() {
             <img
               src={SkillsIcon}
               className={styles.nav_icon}
-              alt='Skills icon'
+              alt="Skills icon"
             />
           </NavLink>
         </div>
         <div className={styles.nav_div} id={styles.portfolio_div}>
           <NavLink
-            to='/Portfolio'
+            to="/Portfolio"
             className={styles.nav_link}
             activeClassName={styles.nav_link_active}
           >
@@ -59,13 +59,13 @@ function MyNavbar() {
               src={PortfolioIcon}
               className={styles.nav_icon}
               id={styles.portfolio_icon}
-              alt='Portfolio icon'
+              alt="Portfolio icon"
             />
           </NavLink>
         </div>
         <div className={styles.nav_div} id={styles.contact_div}>
           <NavLink
-            to='/Contact'
+            to="/Contact"
             className={styles.nav_link}
             id={styles.contact_link}
             activeClassName={styles.nav_link_active}
@@ -77,20 +77,16 @@ function MyNavbar() {
               src={ContactIcon}
               className={styles.nav_icon}
               id={styles.contact_icon}
-              alt='Contact icon'
+              alt="Contact icon"
             />
           </NavLink>
         </div>
-        <NavLink to='/NavOverlay'>
-          <div className={styles.logo_mobile}>
-            <img
-              src={Final_R}
-              className={styles.logo_mobile_image}
-              alt='logo'
-            />
-          </div>
-        </NavLink>
       </div>
+      <NavLink to="/NavOverlay">
+        <div className={styles.logo_mobile}>
+          <img src={Final_R} className={styles.logo_mobile_image} alt="logo" />
+        </div>
+      </NavLink>
     </>
   )
 }

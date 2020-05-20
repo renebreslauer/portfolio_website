@@ -63,19 +63,26 @@
   transition: 1s ease-in-out;
 }
 
-.nav_overlay_internal a {
-  text-decoration: none;
-  color: $color-primary-mid;
-  font-size: 4rem;
-  transition: 0.3s ease-in-out;
+.nav_overlay_internal {
+  h2 {
+    transition: all 0.2s ease-in-out;
+  }
+  h2:hover {
+    transform: translate(-0.5rem, -0.5rem);
+  }
+  a {
+    text-decoration: none;
+    color: $color-primary-mid;
+    font-size: 4rem;
+    transition: 0.1s ease-in-out;
 
-  &:hover {
-    color: white;
-    text-shadow: 7px 7px black;
-    transform: translateY(-3rem);
+    &:hover {
+      color: white;
+      text-shadow: 7px 7px black;
+      transform: translateY(-3rem);
+    }
   }
 }
-
 .nav_overlay_external {
   margin-top: 5rem;
   transition: 0.3s ease-in-out;

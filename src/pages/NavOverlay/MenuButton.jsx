@@ -1,6 +1,5 @@
 import React from 'react'
 import './Menu.scss'
-import Final_R from '../../assets/final_r.svg'
 import { RAnimationResized } from '../../components/index'
 class MenuButton extends React.Component {
   render() {

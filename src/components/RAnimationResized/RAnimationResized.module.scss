@@ -1,8 +1,15 @@
 @import '../../App.scss';
 
-.svg_container_resize {
+object {
+  width: 100%;
+  display: block;
+  height: auto;
   position: relative;
-  z-index: 100;
+}
+.svg_container_resize {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .final_r {
   position: absolute;
@@ -16,6 +23,7 @@
   animation-iteration-count: 1;
   animation-timing-function: linear;
   z-index: 100;
+  margin-left: -2.5rem;
 }
 
 #hood {

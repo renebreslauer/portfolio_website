@@ -7,6 +7,8 @@
   flex-direction: column;
   padding-top: 20ch;
   width: 100%;
+  height: 100%;
+  margin-top: 5rem;
 }
 
 .header_field {
@@ -49,5 +51,14 @@
   }
   50% {
     border-color: #94fc13;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact_wrapper {
+    margin-top: 0;
+  }
+  .typewriter h2 {
+    font-size: 4rem;
   }
 }

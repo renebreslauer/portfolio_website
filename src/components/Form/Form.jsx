@@ -46,34 +46,34 @@ class Form extends Component {
     return (
       <form
         id={styles.contact_form}
-        className='contact_form'
+        className="contact_form"
         onSubmit={(e) => this.formSubmit(e)}
-        method='POST'
+        method="POST"
       >
         <div className={styles.input_group}>
           <div className={styles.form_group}>
             <input
-              id='name'
-              type='text'
-              placeholder='Name'
+              id="name"
+              type="text"
+              placeholder="Name"
               className={styles.name_control}
-              autoComplete='off'
+              autoComplete="off"
               value={this.state.name}
               onChange={(e) => this.setState({ name: e.target.value })}
-              name='name'
+              name="name"
             />
           </div>
         </div>
         <div className={styles.form_group}>
           <input
-            id='email'
-            type='email'
-            placeholder='Email'
-            className={styles.message_control}
-            aria-describedby='emailHelp'
-            autoComplete='off'
+            id="email"
+            type="email"
+            placeholder="Email"
+            className={styles.name_control}
+            aria-describedby="emailHelp"
+            autoComplete="off"
             onChange={(e) => this.setState({ email: e.target.value })}
-            name='email'
+            name="email"
             required
             value={this.state.email}
           />
@@ -81,19 +81,19 @@ class Form extends Component {
 
         <div className={styles.form_group}>
           <textarea
-            id='message'
-            className={styles.message_input}
-            type='text'
-            placeholder='Message'
-            rows='5'
+            id="message"
+            className={styles.message_control}
+            type="text"
+            placeholder="Message"
+            rows="5"
             onChange={(e) => this.setState({ message: e.target.value })}
-            name='message'
+            name="message"
             value={this.state.message}
             required
           />
         </div>
         <div className={styles.buttons}>
-          <button type='submit' className={styles.blob_btn}>
+          <button type="submit" className={styles.blob_btn}>
             {this.state.buttonText}
 
             <span className={styles.blob_btn__inner}>
@@ -107,21 +107,21 @@ class Form extends Component {
           </button>
         </div>
 
-        <svg xmlns='http://www.w3.org/2000/svg' version='1.1'>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
           <defs>
-            <filter id='goo'>
+            <filter id="goo">
               <feGaussianBlur
-                in='SourceGraphic'
-                result='blur'
-                stdDeviation='10'
+                in="SourceGraphic"
+                result="blur"
+                stdDeviation="10"
               ></feGaussianBlur>
               <feColorMatrix
-                in='blur'
-                mode='matrix'
-                values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7'
-                result='goo'
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                result="goo"
               ></feColorMatrix>
-              <feBlend in2='goo' in='SourceGraphic' result='mix'></feBlend>
+              <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
             </filter>
           </defs>
         </svg>

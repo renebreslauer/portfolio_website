@@ -1,5 +1,26 @@
 @import '../../App.scss';
 
+#MenuButton {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #MenuButton {
+    display: block;
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 5rem;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+  }
+}
+
 #flyoutMenu {
   width: 100vw;
   height: 100vh;

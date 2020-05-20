@@ -6,6 +6,7 @@ import SkillsIcon from '../../assets/Skills_icon.svg'
 import ContactIcon from '../../assets/Contact_icon.svg'
 import PortfolioIcon from '../../assets/Portfolio_icon.svg'
 import { NavLink } from 'react-router-dom'
+import { MenuContainer } from '../../pages/index'
 
 function MyNavbar() {
   return (
@@ -82,11 +83,12 @@ function MyNavbar() {
           </NavLink>
         </div>
       </div>
-      <NavLink to="/NavOverlay">
+      <MenuContainer />
+      {/* <NavLink to="/NavOverlay">
         <div className={styles.logo_mobile}>
           <img src={Final_R} className={styles.logo_mobile_image} alt="logo" />
         </div>
-      </NavLink>
+      </NavLink> */}
     </>
   )
 }

@@ -8,7 +8,7 @@ import {
   Contact,
   Skills,
   Portfolio,
-  NavOverlay,
+  MenuContainer,
 } from './pages/index.js'
 
 function App() {
@@ -17,22 +17,22 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path='/NavOverlay'>
-            <NavOverlay />
+          <Route path="/MenuContainer">
+            <MenuContainer />
           </Route>
-          <Route path='/About'>
+          <Route path="/About">
             <About />
           </Route>
-          <Route path='/Skills'>
+          <Route path="/Skills">
             <Skills />
           </Route>
-          <Route path='/Portfolio'>
+          <Route path="/Portfolio">
             <Portfolio />
           </Route>
-          <Route path='/Contact'>
+          <Route path="/Contact">
             <Contact />
           </Route>
-          <Route exact path='/'>
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>

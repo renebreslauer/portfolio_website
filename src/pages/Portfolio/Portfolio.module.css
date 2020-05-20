@@ -4,7 +4,7 @@
   flex-direction: row;
   align-content: center;
   align-items: center;
-  overflow: hidden;
+
   animation: fadeIn 2s;
   height: 100vh;
   width: 100vw;
@@ -169,6 +169,8 @@
 
 @media (max-width: 1050px) {
   .portfolio_wrapper {
+    margin-top: 10rem;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,10 +178,18 @@
     align-content: center;
   }
   .project_one_wrapper {
-    height: 50vh;
+    height: 60vh;
   }
   .project_two_wrapper {
-    height: 50vh;
+    height: 60vh;
     margin-left: 0;
+  }
+  .project1 {
+    height: 30ch;
+    width: 50ch;
+  }
+  .project2 {
+    height: 30ch;
+    width: 50ch;
   }
 }

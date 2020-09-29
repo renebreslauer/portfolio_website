@@ -33,12 +33,13 @@ function Footer() {
               target='_blank'
               rel='noopener noreferrer'
               href='https://github.com/renebreslauer'
+              className={styles.footer_link}
             >
               <FontAwesomeIcon
                 icon={['fab', 'github']}
                 className={styles.footer_icon}
               />
-              Github
+             Github
             </a>
           </p>
           <p>
@@ -46,6 +47,7 @@ function Footer() {
               target='_blank'
               rel='noopener noreferrer'
               href='https://linkedin.com/in/renebreslauer'
+              className={styles.footer_link}
             >
               <FontAwesomeIcon
                 icon={['fab', 'linkedin-in']}
@@ -59,6 +61,7 @@ function Footer() {
               target='_blank'
               rel='noopener noreferrer'
               href='https://twitter.com/ReneBreslauer/'
+              className={styles.footer_link}
             >
               <FontAwesomeIcon
                 icon={['fab', 'twitter']}
@@ -72,6 +75,8 @@ function Footer() {
               target='_blank'
               rel='noopener noreferrer'
               href='https://www.behance.net/renebreslauer'
+              className={styles.footer_link}
+
             >
               <FontAwesomeIcon
                 icon={['fab', 'behance']}
@@ -85,6 +90,8 @@ function Footer() {
               target='_blank'
               rel='noopener noreferrer'
               href='https://dribbble.com/renebreslauer'
+              className={styles.footer_link}
+
             >
               <FontAwesomeIcon
                 icon={['fab', 'dribbble']}

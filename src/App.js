@@ -10,8 +10,20 @@ import {
   Portfolio,
   MenuContainer,
 } from './pages/index.js'
+import curDot from 'cursor-dot'
 
 function App() {
+  const $ = (s) => document.querySelector(s)
+
+  const cursor = curDot({
+    easing: 4,
+  })
+
+  cursor.over('body', {
+    background: '#fff',
+    zIndex: 999999999999,
+  })
+
   return (
     <>
       <Router>

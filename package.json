@@ -19,7 +19,7 @@
     "express": "^4.17.1",
     "fontawesome": "^5.6.3",
     "from": "^0.1.7",
-    "nodemailer": "^6.4.6",
+    "nodemailer": "^6.4.16",
     "react": "^16.13.1",
     "react-animated-modal": "^1.1.1",
     "react-dom": "^16.13.1",
